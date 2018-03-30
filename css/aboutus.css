@@ -1,0 +1,40 @@
+/* Pattern styles */
+.container {
+  display: flex;
+  width: 100%;
+  max-height: 100%;
+  color:white;
+}
+
+.flex-item {
+    margin: 5px;
+}
+
+h1{
+  color:white;
+}
+
+.leftvision{
+  width:70%;
+}
+
+.leftvalue{
+  max-width: 30%;
+}
+
+.leftmission{
+  width: 70%;
+}
+
+.rightvision{
+  max-width: 30%;
+}
+
+.rightvalue{
+  width: 70%;
+}
+
+.rightmission{
+   max-width: 30%;
+}
+
