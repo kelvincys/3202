@@ -4,16 +4,12 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logo-nav/blob/master/LICENSE)
  */
 
-body {
-  padding-top: 54px;
-}
-
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
 
 .navbar-trans{
 	background: rgba(0,0,0,0);
+
+}
+
+.nav-link{
+	color: white;
 }
