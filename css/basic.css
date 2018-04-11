@@ -7,7 +7,11 @@
 body {
   position: relative;
 }
-
 .navbar-trans{
 	background: rgba(0,0,0,0);
+
+}
+
+.nav-link{
+	color: white;
 }
