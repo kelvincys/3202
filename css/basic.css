@@ -23,6 +23,24 @@ a:hover {
 a:active {
     text-decoration: none;
 }
+
+.container{
+	background: black;
+}
+
+section.active{
+
+}
+
+section {
+  width: 100%;
+  padding: 50px;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  height: 500px;
+  text-align: center;
+}
+
 .navbar-trans{
 	background: rgba(0,0,0,0);
 

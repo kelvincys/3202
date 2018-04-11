@@ -17,12 +17,12 @@
     <link href="css/basic.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 
   </head>
 
-  <body data-spy="scroll" data-target="#navbarResponsive">
+  <body>
   	<div class="parallax"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -35,7 +35,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a href="#">
                 <span class="nav-link" >Home</span>
                 <span class="line -right"></span>
@@ -87,42 +87,49 @@
       </div>
     </nav>
 
+
+
     <!-- Page Content -->
+    <div class="sections">
     <div class="parallax"></div>
 
-    <div id="home" class="container">
+    <section id="home" class="container">
       <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
       <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
       
-    </div>
+    </section>
     <div class="parallax"></div>
-     <div id="about" class="container">
+     <section id="about" class="container">
      <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
       <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
       
-    </div>
+    </section>
     <div class="parallax"></div>
-     <div  id="service" class="container">
+     <section  id="service" class="container">
      <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
       <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
       
-    </div>
+    </section>
     <div class="parallax"></div>
-     <div  id="contact" class="container">
+     <section  id="contact" class="container">
      <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
       <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
       
-    </div>
+    </section>
     <div class="parallax"></div>
-     <div id="contact2" class="container">
+     <section id="contact2" class="container">
      <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
       <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
       
-    </div>
+    </section>
     <div class="parallax"></div>
-
+	</div>
     <!-- /.container -->
-
+    <script>
+$(document).ready(function(){
+    $('body').scrollspy({target: ".navbar", offset: 50});   
+});
+</script>
   
   </body>
 
