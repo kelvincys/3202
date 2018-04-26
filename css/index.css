@@ -28,7 +28,6 @@ section {
   background: transparent;
   border-bottom: 1px solid #ccc;
   min-height: 500px;
-  text-align: center;
 }
 
 .nav-link{
@@ -65,4 +64,8 @@ section {
 .nav-item .line {
   position: absolute;
   background: #ffb7c5;
+}
+
+h1{
+  text-align: center;
 }
