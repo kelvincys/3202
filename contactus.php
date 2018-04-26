@@ -19,7 +19,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="js/form-validation.js"></script>
 
   </head>
 
@@ -85,7 +86,26 @@
         </div>
       </div>
     </nav>
+     <section id="contact" class="container">
+            <form action="#" method='post'>
+              <h1>Contact us</h1>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="yname" placeholder="Your name...">
 
+              <label for="number">Contact number</label>
+              <input type="text" id="number" name="cnumber" placeholder="Your last name...">
+
+              <label for="email">Your email</label>
+              <input type="text" id="email" name="yemail" placeholder="Your email...">
+
+              <label for="enquiry">Your enquiry</label>
+              <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit" class="btn btn-default" onclick="checkForm()">
+              
+
+            </form> 
+          </section>
 
   
   </body>
