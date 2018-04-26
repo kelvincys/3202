@@ -100,14 +100,14 @@
 
 
           <section id="service" class="container">
-            <h1 class="mt-5">We Guarantee</h1>
+            <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
             <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
           </section>
 
 
           <section id="album" class="container">
             <h1 class="mt-5">Amazing Moments From Our Customers</h1>
-              <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
+              <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>  
           </section>
 
 

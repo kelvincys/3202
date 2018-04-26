@@ -97,7 +97,7 @@ input[type=submit]:hover {
 }
 /* Add a background color and some padding around the form */
 
-h1{
+h1, p{
   text-align: center;
 }
 
