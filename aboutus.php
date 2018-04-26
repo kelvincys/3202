@@ -86,6 +86,7 @@
       </div>
     </nav>
     <div class="maintext1">
+      <h1>About us</h1>
       Moment® is a modern event organizing company for proposing, wedding party and birthday party. The company established in February of 2018. With over 100 partnerships in Australia, we provide various locations for holding your party.  Our organizing committee are all passionate in making every moment in the party perfect.
     </div>
     <div class="maintext1">

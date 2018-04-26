@@ -1,9 +1,12 @@
-body, html {
+body {
     height: 100%;
     background-color: transparent;
     position: relative;
     color: black;
     padding-top:120px;
+    background-image: url("../assert/1234.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 .nav-link{
@@ -48,5 +51,8 @@ body, html {
   margin-left: auto;
   margin-right: auto;
   padding-top:20px;
-}
+  font-family: Helvetica;
+  background-color: rgb(105,105,105,0.6);
+  padding: 10px;
+
 }
