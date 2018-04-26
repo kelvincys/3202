@@ -5,14 +5,13 @@ body {
     color: black;
     padding-top:120px;
     background-image: url("../assert/1234.jpg");
+    background-color: rgb(255, 255, 255, 0.5);
     background-repeat:no-repeat;
     background-size:cover;
 }
-.navbar{
-  background-color: rgb(255,255,255, 0.5);
-}
+
 .nav-link{
-    color: black;
+    color: #ffb7c5;
 }
 
 .nav-item a {
@@ -38,13 +37,13 @@ body {
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: black;
+  background: #ffb7c5;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 .nav-item .line {
   position: absolute;
-  background: black;
+  background: #ffb7c5;
 }
 
 .maintext1{
@@ -53,8 +52,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top:20px;
-  font-family: Helvetica;
-  background-color: rgb(105,105,105,0.6);
+  font-family: Georgia;
   padding: 10px;
 
 }
