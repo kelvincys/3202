@@ -91,7 +91,7 @@
     <!-- Page Content -->
     
     <div class="sections">
-          <section id="about" class="container">
+          <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
           <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
           <center><input type="button" value="Our past events">
@@ -99,19 +99,20 @@
       </section>
 
 
-          <section id="service" class="container">
+          <section id="service" class="container-fluid">
             <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
+
             <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
           </section>
 
 
-          <section id="album" class="container">
+          <section id="album" class="container-fluid">
             <h1 class="mt-5">Amazing Moments From Our Customers</h1>
               <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>  
           </section>
 
 
-          <section id="contact" class="container">
+          <section id="contact" class="container-fluid">
             <form action="action_page.php">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>

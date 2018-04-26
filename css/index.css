@@ -2,7 +2,8 @@ body, html {
     height: 100%;
     background-color: transparent;
     position: relative;
-    color: #ffb7c5;
+    color: #ff849c;
+    width: 100%;
 }
 
 .parallax {
@@ -18,17 +19,17 @@ body, html {
     background-size: cover;
 }
 
-section.active{
-
-}
-
 section {
   width: 100%;
   padding: 100px;
   background: transparent;
   border-bottom: 1px solid #ccc;
-  min-height: 500px;
+  display: block;
+  box-sizing: border-box;
 
+}
+.sections {
+  width: 100%;
 }
 
 .nav-link{
@@ -71,7 +72,7 @@ section {
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
-    border: 1px solid #ffb7c5; /* Gray border */
+    border: 1px solid #ff849c; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: 8px; /* Bottom margin */
@@ -81,9 +82,9 @@ input[type=text], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: white;
-    color: #ffb7c5;
+    color: #ff849c;
     padding: 6px 10px;
-    border: solid #ffb7c5;
+    border: solid #ff849c;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -99,18 +100,29 @@ input[type=submit]:hover {
 
 h1, p{
   text-align: center;
+  padding: 0px 100px 0px 100px;
 }
 
 input[type=button] {
     background-color: white;
-    color: #ffb7c5;
+    color: #ff849c;
     padding: 6px 10px;
-    border: solid #ffb7c5;
+    border: solid #ff849c;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
 }
 
 form{
-  padding-top: 50px;
+  padding: 50px 200px 0px 200px;
+}
+
+#service {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url("../assert/001.jpg");
+  min-height: 500px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
