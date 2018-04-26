@@ -6,6 +6,7 @@
 
 body {
   position: relative;
+  color: #ffb7c5;
 }
 
 a:link {
@@ -23,22 +24,23 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-.navbar-trans{
-	background: rgba(0,0,0,0);
 
+.navbar {
+	overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: white;
+}
+.content {
+	margin-top: 50px;
 }
 
 .nav-link{
-	color: white;
+	color: #ffb7c5;
 }
 
-.nav-item {
-  background: (0,0,0,0);
-  color: white
-  
-}
 .nav-item a {
-  color: white;
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 1px solid transparent;
@@ -46,6 +48,7 @@ a:active {
   font-size: 1.5em;
   cursor: pointer;
   letter-spacing: 0.07em;
+  margin-right: 4px;
 }
 .nav-item a .text {
   font-family: proxima-nova, monospace;
@@ -60,13 +63,13 @@ a:active {
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: white;
+  background: #ffb7c5;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
 }
 .nav-item .line {
   position: absolute;
-  background: white;
+  background: #ffb7c5;
 }
 .nav-item .line.-right, .nav-item .line.-left {
   width: 3px;
@@ -137,3 +140,34 @@ a:active {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
 }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ffb7c5; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: white;
+    color: #ffb7c5;
+    padding: 6px 10px;
+    border: solid #ffb7c5;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    border-style: solid;
+    background-color: white;
+  	transform: translateY(4px);
+}
+/* Add a background color and some padding around the form */
