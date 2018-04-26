@@ -39,13 +39,6 @@ section {
 
 .navbar-trans{
 	background: rgba(0,0,0,0);
-
-.navbar {
-	overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    background-color: white;
 }
 .content {
 	margin-top: 50px;
