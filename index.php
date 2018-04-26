@@ -99,10 +99,31 @@
       </section>
 
 
-          <section id="service" class="container-fluid">
+          <section id="service" class="container-fluid service">
             <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
-
-            <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
+            <p>Discuss your plan with us and we will try their best to work it out, if you don't have a plan. We can customized an unique experience for you.</p>  
+            <a href="#" onclick="document.location=this.id+'.html'; return false;" >
+              <center>
+                <div class="photo">
+                  <img src="assert/propose.jpg" alt="proposal" class="pbutton">
+                  <div class="middle">
+                <div class="caption">Secret proposal</div>
+                  </div>
+                </div>
+                <div class="photo">
+                  <img src="assert/birthday.jpg" alt="proposal" class="pbutton">
+                  <div class="middle">
+                <div class="caption">Birthday Party</div>
+                  </div>
+                </div>
+                <div class="photo">
+                  <img src="assert/004.jpg" alt="proposal" class="pbutton">
+                  <div class="middle">
+                <div class="caption">Engage/Wedding Party</div>
+                  </div>
+                </div>
+              </center>
+            </a>
           </section>
 
 
