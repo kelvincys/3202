@@ -64,8 +64,8 @@
               </a>
             </li>
             <li class="nav-item">
-              <a>
-              <span class="nav-link" href="#">Album</span>
+              <a href="#album">
+              <span class="nav-link" href="#album">Album</span>
               <span class="line -right"></span>
                 <span class="line -top"></span>
                 <span class="line -left"></span>
@@ -87,37 +87,29 @@
     </nav>
 
 
-
-    <!-- Page Content -->
     <div class="parallax"></div>
+    <!-- Page Content -->
+    
     <div class="sections">
-      <div class="parallax"></div>
-      <div class="content">
-        <div id="home" class="container">
-         <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
-          <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
-      </div>
-
-        <div class="parallax"></div>
-          <div id="about" class="container">
+          <section id="about" class="container">
           <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
           <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
-      </div>
+      </section>
 
-       <div class="parallax"></div>
-          <div  id="service" class="container">
+
+          <section id="service" class="container">
             <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
             <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
-          </div>
+          </section>
 
-        <div class="parallax"></div>
-          <div  id="contact" class="container">
+
+          <section id="album" class="container">
             <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
               <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
-          </div>
+          </section>
 
-        <div class="parallax"></div>
-          <div id="contact2" class="container">
+
+          <section id="contact" class="container">
             <form action="action_page.php">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
@@ -136,10 +128,10 @@
               
 
             </form> 
-          </div>
-    </div>
-      <div class="parallax"></div>
+          </section>
+
 	</div>
+
     <!-- /.container -->
     <script>
 $(document).ready(function(){

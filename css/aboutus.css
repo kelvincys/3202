@@ -1,40 +1,52 @@
-/* Pattern styles */
-.container {
-  display: flex;
-  width: 100%;
-  max-height: 100%;
-  color:white;
+body, html {
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    color: black;
+    padding-top:120px;
 }
 
-.flex-item {
-    margin: 5px;
+.nav-link{
+    color: black;
 }
 
-h1{
-  color:white;
+.nav-item a {
+  padding: 0.7em calc(0.7em * 1.2);
+  display: inline-block;
+  border: 1px solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  margin-right: 4px;
+}
+.nav-item a .text {
+  font-family: proxima-nova, monospace;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.nav-item a:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: black;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+.nav-item .line {
+  position: absolute;
+  background: black;
 }
 
-.leftvision{
-  width:70%;
+.maintext1{
+  text-align: center;
+  width:500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:20px;
 }
-
-.leftvalue{
-  max-width: 30%;
 }
-
-.leftmission{
-  width: 70%;
-}
-
-.rightvision{
-  max-width: 30%;
-}
-
-.rightvalue{
-  width: 70%;
-}
-
-.rightmission{
-   max-width: 30%;
-}
-
