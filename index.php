@@ -122,6 +122,7 @@
                 <div class="caption">Engage/Wedding Party</div>
                   </div>
                 </div>
+
               </center>
             </a>
           </section>
