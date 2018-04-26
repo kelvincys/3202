@@ -93,7 +93,7 @@
     <div class="sections">
           <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
-          <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
+          <p>MOMENT is founded by a group of people who are passionate in creating unforgettable experiences. We are </p>
           <center><input type="button" value="Our past events">
           <input type="button" value="Know more about us"></center>
       </section>
