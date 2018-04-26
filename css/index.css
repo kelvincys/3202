@@ -86,7 +86,7 @@ input, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -98,7 +98,7 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     border-style: solid;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     transform: translateY(4px);
 }
 /* Add a background color and some padding around the form */
@@ -109,7 +109,7 @@ h1, p{
 }
 
 input[type=button] {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -135,13 +135,8 @@ form{
 .photo {
     position: relative;
     float: left;
-<<<<<<< HEAD
     width:33%;
-=======
-    width:28%;
->>>>>>> d5d2402abc2914704c6efe68adc32dd6c27232e5
 }
-
 .pbutton {
   opacity: 1;
   display: block;
@@ -186,4 +181,8 @@ form{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+label {
+  font-weight: bold;
 }
