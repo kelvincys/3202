@@ -107,7 +107,7 @@
 
 
           <section id="album" class="container-fluid">
-            <h1 class="mt-5">Amazing Moments From Our Customers</h1>
+            <h1 class="mt-5">Amazing Moments Of Our Customers</h1>
               <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>  
           </section>
 
