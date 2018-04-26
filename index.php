@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
        <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt="">
+          <img src="assert/icon.png"  alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -92,19 +92,21 @@
     
     <div class="sections">
           <section id="about" class="container">
-          <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
+          <h1 class="mt-5">The Event Organizing Expert</h1>
           <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>
+          <center><input type="button" value="Our past events">
+          <input type="button" value="Know more about us"></center>
       </section>
 
 
           <section id="service" class="container">
-            <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
+            <h1 class="mt-5">We Guarantee</h1>
             <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
           </section>
 
 
           <section id="album" class="container">
-            <h1 class="mt-5">Logo Nav by Start Bootstrap</h1>
+            <h1 class="mt-5">Amazing Moments From Our Customers</h1>
               <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML. For best results, it's recommended that you use an SVG image as your logo.</p>  
           </section>
 
@@ -124,7 +126,7 @@
               <label for="enquiry">Your enquiry</label>
               <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px"></textarea>
 
-              <input type="submit" value="Submit" class="btn btn-default">
+              <input type="submit" value="Submit">
               
 
             </form> 
