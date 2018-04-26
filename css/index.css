@@ -135,7 +135,11 @@ form{
 .photo {
     position: relative;
     float: left;
+<<<<<<< HEAD
     width:33%;
+=======
+    width:28%;
+>>>>>>> d5d2402abc2914704c6efe68adc32dd6c27232e5
 }
 
 .pbutton {
