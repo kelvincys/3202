@@ -102,29 +102,32 @@
           <section id="service" class="container-fluid service">
             <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
             <p>Discuss your plan with us and we will try their best to work it out, if you don't have a plan. We can customized an unique experience for you.</p>  
-            <a href="#" onclick="document.location=this.id+'.html'; return false;" >
-              <center>
+            <center>
+            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="proposal"> 
                 <div class="photo">
                   <img src="assert/propose.jpg" alt="proposal" class="pbutton">
                   <div class="middle">
                 <div class="caption">Secret proposal</div>
                   </div>
                 </div>
+            </a>
+            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="birthday" >
                 <div class="photo">
-                  <img src="assert/birthday.jpg" alt="proposal" class="pbutton">
+                  <img src="assert/birthday.jpg" alt="birthday" class="pbutton">
                   <div class="middle">
                 <div class="caption">Birthday Party</div>
                   </div>
                 </div>
+            </a>
+            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="wedding" >
                 <div class="photo">
-                  <img src="assert/004.jpg" alt="proposal" class="pbutton">
+                  <img src="assert/004.jpg" alt="wedding" class="pbutton">
                   <div class="middle">
                 <div class="caption">Engage/Wedding Party</div>
                   </div>
                 </div>
-
-              </center>
             </a>
+            </center>
           </section>
 
 
