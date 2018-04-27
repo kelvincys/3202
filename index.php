@@ -93,7 +93,7 @@
     <div class="sections">
           <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
-          <p>MOMENT is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
+          <p>MOMENT® is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
           <center><input type="button" value="Our past events">
           <input type="button" value="Know more about us"></center>
       </section>
