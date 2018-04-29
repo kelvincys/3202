@@ -8,7 +8,7 @@ body, html {
 
 .parallax {
     /* The image used */
-    background-image: url("../assert/homeback.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.4)), url("../assert/homeback.jpg");
     /* Full height */
     height: 100%;
 
@@ -151,4 +151,9 @@ form{
 
 label {
   font-weight: bold;
+}
+
+.concepts {
+  background: none;
+  color: white;
 }

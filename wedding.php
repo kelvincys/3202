@@ -87,8 +87,8 @@
     <center>
     <img src="assert/008.jpg" width=100%></img>
     </center>
-
-  
+    <h1>Wedding Party</h1>
+    <p>kjthevfiwjkrhdvnsk bhfureiojfwdbvfjhwejfkwnfjkwrnvjrbghrhfkwenvjrblrvjkrwnvjhrnvjrbrebvjkrnvejknvjeknveknvjk</p>
   </body>
 
 </html>

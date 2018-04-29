@@ -24,11 +24,12 @@
 
   <body>
   	<div class="parallax"></div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
        <a class="navbar-brand" href="#">
-          <img src="assert/icon.png"  alt="">
+          <img src="assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -89,7 +90,6 @@
 
     <div class="parallax"></div>
     <!-- Page Content -->
-    
     <div class="sections">
           <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
