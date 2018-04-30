@@ -85,8 +85,8 @@
         </div>
       </div>
     </nav>
-     <section id="contact" class="container">
-            <form action="#" method='post'>
+     <section id="contact" class="container-fluid">
+            <form action="action_page.php">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
               <input type="text" id="name" name="yname" placeholder="Your name...">
@@ -100,7 +100,7 @@
               <label for="enquiry">Your enquiry</label>
               <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px"></textarea>
 
-              <input type="submit" value="Submit" class="btn btn-default" onclick="checkForm()">
+              <input type="submit" value="Submit">
               
 
             </form> 
