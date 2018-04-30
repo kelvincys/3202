@@ -89,16 +89,16 @@
             <form action="action_page.php">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="yname" placeholder="Your name...">
+              <input type="text" id="name" name="yname" placeholder="Your name..." required>
 
               <label for="number">Contact number</label>
-              <input type="text" id="number" name="cnumber" placeholder="Your last name...">
+              <input type="text" id="number" name="cnumber" placeholder="Your last name..." required>
 
               <label for="email">Your email</label>
-              <input type="text" id="email" name="yemail" placeholder="Your email...">
+              <input type="text" id="email" name="yemail" placeholder="Your email..." required>
 
               <label for="enquiry">Your enquiry</label>
-              <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px"></textarea>
+              <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px" required></textarea>
 
               <input type="submit" value="Submit">
               
