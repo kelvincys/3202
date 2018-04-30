@@ -86,20 +86,74 @@
         </div>
       </div>
     </nav>
-
-    <div id="mySidenav" class="sidenav margindown">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="proposal.php">Sercet Proposal</a>
-      <a href="birthday.php">Birthday Party</a>
-      <a href="wedding.php">Wedding Party</a>
-    </div>
-    <div class="container-fluid down">
+    <div class="container-fluid halfdown">
       <div class="row">
-        <div class="col-lg-3">
-          <span onclick="openNav()">open</span>
+        <div class="col-lg-4" style="text-align: center">
+          <a onclick="loadproposal()">Sercet Proposal</a>
+        </div>
+        <div class="col-lg-4" style="text-align: center">
+          <a onclick="loadbirthday()"9>Birthday Party</a>
+        </div>
+        <div class="col-lg-4" style="text-align: center">
+          <a onclick="loadwedding()">Wedding Party</a>
         </div>
       </div>
-   </div>
+    </div>
+    
+    <div id="content">
+
+    </div>
+   
+
+
   </body>
+  <script type="text/javascript">
+    function loadproposal(){
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("content").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "proposal.php", true);
+    xhttp.send();
+  }
+
+   function loadbirthday(){
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("content").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "birthday.php", true);
+    xhttp.send();
+  }
+
+   function loadwedding(){
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+       document.getElementById("content").innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "wedding.php", true);
+    xhttp.send();
+  }
+  </script>
+  <!--<script type="text/javascript">
+    $(function(){
+        $('#side a').on('click', function(e){
+            e.preventDefault();
+            var page_url=$(this).prop('href');
+            document.getElementById("content").innerHTML='<object type="text/html" data= page_url></object>';
+        });
+    });
+  </script> -->
+      ​​
+
 
 </html>
