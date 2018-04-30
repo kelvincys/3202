@@ -22,6 +22,7 @@
     <script src="js/basic.js"></script>
 
 
+
   </head>
 
   <body>
@@ -83,12 +84,36 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
+              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
+              Login/Sign Up</button>
             </li>
 
           </ul>
         </div>
       </div>
     </nav>
+
+    <div id="poplog" class="modal">
+  
+            <form class="login animate" action="/action_page.php">
+                  
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <img src="assert/icon.png" alt="Avatar" class="avatar">
+                <h2 style="text-align:center">Log In</h2>
+                <p>New to MOMENT? <a href="#" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
+              </div>
+
+              <div class="container">
+                <input type="username" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">        
+                <button type="submit">Login</button>    
+                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+              </div>
+              
+            </form>
+  
+          </div>
 
 
     <div class="parallax"></div>
@@ -141,7 +166,7 @@
 
 
           <section id="contact" class="container-fluid">
-            <form action="action_page.php">
+            <form action="action_page.php" class="contactform">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
               <input type="text" id="name" name="yname" placeholder="Your name..." required="">
@@ -160,6 +185,7 @@
 
             </form> 
           </section>
+        </div>
 
 	</div>
 
