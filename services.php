@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/service.js"></script>
 
   </head>
 
@@ -28,7 +29,7 @@
     <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
        <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt="">
+          <img src="assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -86,8 +87,19 @@
       </div>
     </nav>
 
-
-  
+    <div id="mySidenav" class="sidenav margindown">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="proposal.php">Sercet Proposal</a>
+      <a href="birthday.php">Birthday Party</a>
+      <a href="wedding.php">Wedding Party</a>
+    </div>
+    <div class="container-fluid down">
+      <div class="row">
+        <div class="col-lg-3">
+          <span onclick="openNav()">open</span>
+        </div>
+      </div>
+   </div>
   </body>
 
 </html>
