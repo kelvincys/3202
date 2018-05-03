@@ -15,7 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
-    <link href="css/contactus.css" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -132,7 +132,78 @@
   
           </div>
 
+          <div class="container-fluid" id="register">
+            <div class="row">
+              <div class="col-md-12 order-md-1">
+                <h4>Join Us in this MOMENT</h4>
+                <form class="needs-validation" method="post">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">First name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="comfirmPassword">Comfirm password</label>
+                      <input type="password" class="form-control" id="comfirmPassword" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Different with previous password
+                      </div>
+                    </div>
+                    
+                  </div>
 
+                  <div class="mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="username" placeholder="Username" required>
+                      <div class="invalid-feedback">
+                        Your username is required.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email">Email <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                    
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email">Phone Number <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Phone number" required>
+                    <div class="invalid-feedback">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                    
+                  </div>
+                  <input type="submit" value="Register">
+                  
+            <!-- /.row -->
+                </form>
+              </div>
+            </div>
+          </div>
   
   </body>
 
