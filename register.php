@@ -9,7 +9,7 @@
     <meta name="author" content="">
 
     <title>Moment-The Wedding Party Expert</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 

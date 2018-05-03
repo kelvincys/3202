@@ -36,7 +36,6 @@ a:active {
   margin-right: 4px;
 }
 .nav-item a .text {
-  font-family: proxima-nova, monospace;
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
@@ -200,4 +199,9 @@ input[type=username], input[type=password] {
 @keyframes zoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
+}
+
+nav {
+  font-family: 'IM Fell DW Pica', serif;
+  font-family: 'Do Hyeon', sans-serif;
 }
