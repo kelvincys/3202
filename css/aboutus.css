@@ -10,15 +10,13 @@ body {
     background-size:cover;
 }
 
+.word {
 
-
-.maintext1{
   text-align: center;
   width:500px;
   margin-left: auto;
   margin-right: auto;
   padding-top:20px;
-  font-family: Georgia;
   padding: 10px;
 
 }

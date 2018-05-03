@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredericka+the+Great|Fredoka+One|Indie+Flower|Kaushan+Script|Love+Ya+Like+A+Sister|Righteous" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
