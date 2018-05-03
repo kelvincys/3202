@@ -25,10 +25,11 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" >
+        <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
+      <div class="effect"></div>
        <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt="">
+          <img src="assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,12 +80,35 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
+              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
+              Login/Sign Up</button>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
+
+    <div id="poplog" class="modal">
+  
+            <form class="login animate" action="/action_page.php">
+                  
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <img src="assert/icon.png" alt="Avatar" class="avatar">
+                <h2 style="text-align:center">Log In</h2>
+                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
+              </div>
+
+              <div class="container">
+                <input type="username" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">        
+                <button type="submit">Login</button>    
+                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+              </div>
+              
+            </form>
+  
+          </div>
 
     <div class="container">
         <div class="row">
@@ -94,62 +118,61 @@
 
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
             <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="proposal">Secret Proposal</button>
+            <button class="btn btn-default filter-button" data-filter="wedding">Wedding Party</button>
+            <button class="btn btn-default filter-button" data-filter="birthday">Birthday Party</button>
+
         </div>
         <br>
 
 
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
+            
         </div>
     </div>
   
