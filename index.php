@@ -26,7 +26,12 @@
   </head>
 
   <body>
-  	<div class="parallax"></div>
+  	<div class="parallax huge">
+      <p class="smallp">MOMENT IS</p>
+      <p class="hugep">LOVE,</p> 
+      <p class="hugep">DREAM,</p>
+      <p class="hugep">HAPPINESS.</p>
+    </div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" >

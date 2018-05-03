@@ -157,3 +157,21 @@ label {
   background: none;
   color: white;
 }
+
+.huge{
+  padding-top: 150px;
+  padding-left: 100px;
+  color: white;
+
+}
+
+.hugep{
+  font-size: 90px;
+  text-align: left;
+}
+
+.smallp{
+  font-size: 20px;
+  text-align: left;
+  font-family: : Impact;
+}
