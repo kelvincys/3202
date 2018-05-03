@@ -1,4 +1,3 @@
-
     function loadproposal(){
 
     var xhttp = new XMLHttpRequest();

@@ -25,65 +25,7 @@
 
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" >
-      <div class="container">
-       <a class="navbar-brand" href="#">
-          <img src="assert/icon.png" alt="logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="index.php">
-                <span class="nav-link" >Home</span>
-                <span class="line -right"></span>
-                <span class="line -top"></span>
-                <span class="line -left"></span>
-                <span class="line -bottom"></span>
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="aboutus.php">
-                <span class="nav-link" href="#about">About</span>
-                <span class="line -right"></span>
-                <span class="line -top"></span>
-                <span class="line -left"></span>
-                <span class="line -bottom"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="services.php">
-              <span class="nav-link" href="#service">Services</span>
-              <span class="line -right"></span>
-                <span class="line -top"></span>
-                <span class="line -left"></span>
-                <span class="line -bottom"></span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="album.php">
-              <span class="nav-link" href="#album">Album</span>
-              <span class="line -right"></span>
-                <span class="line -top"></span>
-                <span class="line -left"></span>
-                <span class="line -bottom"></span>
-              </a>
-            <li class="nav-item">
-              <a href="contactus.php">
-              <span class="nav-link" >Contact</span>
-              <span class="line -right"></span>
-                <span class="line -top"></span>
-                <span class="line -left"></span>
-                <span class="line -bottom"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    
     <center>
     <img src="assert/008.jpg" width=100%></img>
     </center>

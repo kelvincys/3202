@@ -106,7 +106,7 @@
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
                 <img src="assert/icon.png" alt="Avatar" class="avatar">
                 <h2 style="text-align:center">Log In</h2>
-                <p>New to MOMENT? <a href="#" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
+                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
               </div>
 
               <div class="container">
@@ -127,8 +127,8 @@
           <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
           <p>MOMENT® is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
-          <center><input type="button" value="Our past events">
-          <input type="button" value="Know more about us"></center>
+          <center><a  href="album.php"><button>Our past events</button></a>
+          <a  href="aboutus.php"><button>Know more about us</button></a></center>
       </section>
 
 

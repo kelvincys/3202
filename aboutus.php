@@ -27,8 +27,9 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
+      <div class="effect"></div>
        <a class="navbar-brand" href="#">
-          <img src="http://placehold.it/300x60?text=Logo" width="150" height="30" alt="">
+          <img src="assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -79,14 +80,37 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
+              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
+              Login/Sign Up</button>
             </li>
-
           </ul>
         </div>
       </div>
     </nav>
+
+    <div id="poplog" class="modal">
+  
+            <form class="login animate" action="/action_page.php">
+                  
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <img src="assert/icon.png" alt="Avatar" class="avatar">
+                <h2 style="text-align:center">Log In</h2>
+                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
+              </div>
+
+              <div class="container">
+                <input type="username" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">        
+                <button type="submit">Login</button>    
+                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+              </div>
+              
+            </form>
+  
+          </div>
     <div class="word">
-      <h1>About us</h1>
+      <h1>Abiut Us</h1>
       <p><b>Moment®</b> is a modern event organizing company for proposing, wedding party and birthday party. The company established in February of 2018. With over 100 partnerships in Australia, we provide various locations for holding your party.  Our organizing committee are all passionate in making every moment in the party perfect.</p>
     </div>
     <div class="word">
