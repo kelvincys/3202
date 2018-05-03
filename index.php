@@ -87,7 +87,6 @@
               <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
               Login/Sign Up</button>
             </li>
-
           </ul>
         </div>
       </div>
