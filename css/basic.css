@@ -19,8 +19,6 @@ a:active {
 	background: rgba(0,0,0,0);
 }
 
-
-
 .nav-link{
     color: #ffb7c5;
 }
@@ -34,13 +32,13 @@ a:active {
   cursor: pointer;
   letter-spacing: 0.07em;
   margin-right: 4px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-family: 'Do Hyeon', sans-serif;
 }
 .nav-item a .text {
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-  font-family: 'IM Fell DW Pica', serif;
-  font-family: 'Do Hyeon', sans-serif;
 }
 .nav-item a:after {
   position: absolute;
@@ -128,8 +126,6 @@ a:active {
   transform-origin: left;
 }
 
-*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
-
 /* Full-width input fields */
 input[type=username], input[type=password] {
     width: 90%;
@@ -201,9 +197,4 @@ input[type=username], input[type=password] {
 @keyframes zoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
-}
-
-nav {
-  font-family: 'IM Fell DW Pica', serif;
-  font-family: 'Do Hyeon', sans-serif;
 }
