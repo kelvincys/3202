@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
     <link href="css/aboutus.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|Imprima" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
@@ -85,11 +85,11 @@
         </div>
       </div>
     </nav>
-    <div class="maintext1">
-      <center><img src="assert/aboutus.png"></center>
+    <div class="word">
+      <h1>About us</h1>
       <p><b>Moment®</b> is a modern event organizing company for proposing, wedding party and birthday party. The company established in February of 2018. With over 100 partnerships in Australia, we provide various locations for holding your party.  Our organizing committee are all passionate in making every moment in the party perfect.</p>
     </div>
-    <div class="maintext1">
+    <div class="word">
         <h3>Our Vision</h3>
         To bring happiness to celebrations nationwide.<br><br>
  
@@ -100,7 +100,7 @@
         1. Party Quality and Customer Experience<br>
         2. Creative<br>
         3. Passionate
-  </div>
+    </div>
   </body>
 
 </html>
