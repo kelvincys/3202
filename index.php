@@ -12,10 +12,10 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredericka+the+Great|Fredoka+One|Indie+Flower|Kaushan+Script|Love+Ya+Like+A+Sister|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -128,7 +128,6 @@
           <h1 class="mt-5">The Event Organizing Expert</h1>
           <p>MOMENT® is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
           <center><a  href="album.php"><button>Our past events</button></a>
-          <a  href="aboutus.php"><button>Know more about us</button></a></center>
       </section>
 
 
@@ -166,7 +165,8 @@
 
           <section id="album" class="container-fluid">
             <h1 class="mt-5">Amazing Moments Of Our Customers</h1>
-              <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>  
+              <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>
+              <center><a  href="album.php"><button>Our past events</button></a></center>  
           </section>
 
 
