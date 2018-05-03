@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
     <link href="css/aboutus.css" rel="stylesheet">
