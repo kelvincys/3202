@@ -16,6 +16,6 @@
 var modal = document.getElementById('poplog');
 window.onclick = function(event) {
     if (event.target == modal) {
-        alert("87");
         modal.style.display = "none";
     }
+};

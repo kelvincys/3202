@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/service.js"></script>
-
+    <script src="js/servicewindow.js"></script>
   </head>
 
   <body>
@@ -107,43 +107,7 @@
 
 
   </body>
-  <script type="text/javascript">
-    function loadproposal(){
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("content").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "proposal.php", true);
-    xhttp.send();
-  }
-
-   function loadbirthday(){
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("content").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "birthday.php", true);
-    xhttp.send();
-  }
-
-   function loadwedding(){
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       document.getElementById("content").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "wedding.php", true);
-    xhttp.send();
-  }
-  </script>
   <!--<script type="text/javascript">
     $(function(){
         $('#side a').on('click', function(e){
