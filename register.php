@@ -155,14 +155,14 @@
                     
                     <div class="col-md-6 mb-3">
                       <label for="password">Password</label>
-                      <input type="password" class="form-control" id="password" placeholder="" value="" required>
+                      <input type="text" class="form-control" id="password" placeholder="" value="" required>
                       <div class="invalid-feedback">
                         Valid password is required.
                       </div>
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="comfirmPassword">Comfirm password</label>
-                      <input type="password" class="form-control" id="comfirmPassword" placeholder="" value="" required>
+                      <input type="text" class="form-control" id="comfirmPassword" placeholder="" value="" required>
                       <div class="invalid-feedback">
                         Different with previous password
                       </div>

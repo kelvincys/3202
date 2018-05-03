@@ -9,7 +9,9 @@ body, html {
   padding-top: 120px;
 }
 
-input[type=text], select, textarea, input[type=email]{
+
+
+input[type=text], select, textarea, input[type=email], input[type=password]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */
@@ -17,7 +19,6 @@ input[type=text], select, textarea, input[type=email]{
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: 8px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color: black;
 }
 
 input, textarea {
