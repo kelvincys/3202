@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<?php include 'logined.php' ?>
+
 <html lang="en">
 
   <head>
@@ -90,7 +92,7 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
-              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" id="loginbutton">
+              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
               Login/Sign Up</button>
             </li>
           </ul>
