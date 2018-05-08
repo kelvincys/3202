@@ -135,7 +135,7 @@
           <div class="container-fluid" id="register">
             <div class="row">
               <div class="col-md-12 order-md-1">
-                <h4>Join Us in this MOMENT</h4>
+                <h4>Join the MOMENT now</h4>
                 <form class="needs-validation" method="post">
                   <div class="row">
                     <div class="col-md-6 mb-3">

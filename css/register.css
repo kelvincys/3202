@@ -6,9 +6,12 @@ body, html {
 }
 
 #register{
-  padding-top: 120px;
+  padding: 120px;
 }
 
+label {
+    font-weight: bold;
+}
 
 
 input[type=text], select, textarea, input[type=email], input[type=password]{
