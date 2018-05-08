@@ -131,10 +131,7 @@
     <div id="content">
 
     </div>
-   
-    <?php
-      $id = $_GET['id'];
-    ?>
+   s
 
     <script>
 

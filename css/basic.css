@@ -144,7 +144,6 @@ input[type=username], input[type=password] {
     border-radius: 4px;
     cursor: pointer;
     font-size:20px;
-    float: left;
 }
 
 
@@ -198,4 +197,8 @@ input[type=username], input[type=password] {
 @keyframes zoom {
     from {transform: scale(0)} 
     to {transform: scale(1)}
+}
+
+.clogin{
+  float:left;
 }

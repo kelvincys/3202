@@ -112,7 +112,7 @@
               <div class="container">
                 <input type="username" placeholder="Enter Username" name="uname">
                 <input type="password" placeholder="Enter Password" name="psw">        
-                <button type="submit">Login</button>    
+                <button type="submit" class="clogin">Login</button>    
                 <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
