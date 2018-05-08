@@ -135,7 +135,7 @@
             <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
             <p>Discuss your plan with us and we will try their best to work it out, if you don't have a plan. We can customized an unique experience for you.</p>  
             <center>
-            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="proposal"> 
+            <a href="services.php?id=1"> 
                 <div class="photo">
                   <img src="assert/propose.jpg" alt="proposal" class="pbutton">
                   <div class="middle">

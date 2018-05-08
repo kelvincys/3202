@@ -25,6 +25,8 @@
   </head>
 
   <body>
+
+    
     <!-- Navigation -->
         <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
@@ -130,7 +132,19 @@
 
     </div>
    
+    <?php
+      $id = $_GET['id'];
+    ?>
 
+    <script>
+
+      $(document).ready(function(){
+          var id = $('#id').val();
+          if (id==1){
+            loadproposal();
+          }
+          });
+    </script>
 
   </body>
 
