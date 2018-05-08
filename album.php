@@ -129,7 +129,7 @@
 
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize">
+                <img src="assert/propose1.jpg" class="img-responsive resize">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
@@ -159,7 +159,7 @@
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="assert/birthday3.png" class="img-responsive">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
