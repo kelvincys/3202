@@ -144,6 +144,7 @@ input[type=username], input[type=password] {
     border-radius: 4px;
     cursor: pointer;
     font-size:20px;
+    float: left;
 }
 
 

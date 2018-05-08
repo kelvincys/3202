@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/album.js"></script>
+    <script src="js/basic.js"></script>
 
   </head>
 
@@ -128,11 +129,33 @@
 
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive 365">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="assert/album1.png" class="img-responsive 365">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
+                <img src="assert/birthday1.png" class="img-responsive 365">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive 365">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
+                <img src="assert/wedding2.jpg" class="img-responsive 365">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
+                <img src="assert/birthday2.png" class="img-responsive 365">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive 365">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
+                <img src="assert/wedding3.png" class="img-responsive 365">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
@@ -143,29 +166,7 @@
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="assert/wedding4.jpg" class="img-responsive">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
