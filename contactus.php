@@ -88,30 +88,36 @@
       </div>
     </nav>
 
-    <div id="myModal" class="modal">
+    <div id="poplog" class="modal">
+  
             <form class="login animate" action="/action_page.php">
+                  
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
                 <img src="assert/icon.png" alt="Avatar" class="avatar">
                 <h2 style="text-align:center">Log In</h2>
                 <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
               </div>
+
               <div class="container">
                 <input type="username" placeholder="Enter Username" name="uname">
                 <input type="password" placeholder="Enter Password" name="psw">        
                 <button type="submit">Login</button>    
                 <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
+              
             </form>
-    </div>
+  
+          </div>
+
           <section id="contact" class="container-fluid">
-            <form action="action_page.php">
+            <form method="post" action="contacting.php">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
               <input type="text" id="name" name="yname" placeholder="Your name..." required>
 
               <label for="number">Contact number</label>
-              <input type="text" id="number" name="cnumber" placeholder="Your last name..." required>
+              <input type="text" id="number" name="cnumber" placeholder="Your phone number" required>
 
               <label for="email">Your email</label>
               <input type="text" id="email" name="yemail" placeholder="Your email..." required>

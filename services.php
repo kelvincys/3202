@@ -152,16 +152,6 @@
 
 
   </body>
-
-  <!--<script type="text/javascript">
-    $(function(){
-        $('#side a').on('click', function(e){
-            e.preventDefault();
-            var page_url=$(this).prop('href');
-            document.getElementById("content").innerHTML='<object type="text/html" data= page_url></object>';
-        });
-    });
-  </script> -->
       ​​
 
 
