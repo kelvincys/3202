@@ -30,7 +30,6 @@ input, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: rgba(255, 255, 255, 0.7);
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -53,7 +52,6 @@ h1, p{
 }
 
 input[type=button] {
-    background-color: rgba(255, 255, 255, 0.7);
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;

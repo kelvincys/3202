@@ -52,12 +52,13 @@
   <head>
     <meta charset="utf-8">
     <title>Registration successful!</title>
+    <meta http-equiv="refresh" content="5; url=index.php" />
   </head>
   <body bgcolor="#FFFFFF">      
-    <p align="center">You are now registered<br>
+    <p align="center">Thank you for joining the MOMENT!<br>
       Your username：<font color="#FF0000"><?php echo $username ?></font><br>
       Your password：<font color="#FF0000"><?php echo $password ?></font><br>       
-      Please remember the username and password，then<a href="index.php">Enjoy the MOMENT with your new account!</a>。
+      You will be redirect to the home page in 5 second, if it doesn't please press <a href="index.php">here</a>
     </p>
   </body>
 </html>
