@@ -19,7 +19,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/basic.js"></script>
+    <script src="js/register.js"></script>
 
   </head>
 
@@ -136,36 +137,25 @@
             <div class="row">
               <div class="col-md-12 order-md-1">
                 <h4>Join the MOMENT now</h4>
-                <form class="needs-validation" method="post">
+                
+                <form class="needs-validation" method="post" name="myForm">
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label for="firstName">First name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid first name is required.
-                      </div>
+                      <input name="fname" type="text" class="form-control" id="firstName" placeholder="" value="">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="lastName">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid last name is required.
-                      </div>
+                      <input name="lname" type="text" class="form-control" id="lastName" placeholder="" value="">
                     </div>
                     
                     <div class="col-md-6 mb-3">
                       <label for="password">Password</label>
-                      <input type="text" class="form-control" id="password" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Valid password is required.
-                      </div>
+                      <input name="password" type="password" class="form-control" id="password" placeholder="" value="">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="comfirmPassword">Comfirm password</label>
-                      <input type="text" class="form-control" id="comfirmPassword" placeholder="" value="" required>
-                      <div class="invalid-feedback">
-                        Different with previous password
-                      </div>
+                      <input name="re_password" type="password" class="form-control" id="comfirmPassword" placeholder="" value="">
                     </div>
                     
                   </div>
@@ -173,38 +163,24 @@
                   <div class="mb-3">
                     <label for="username">Username</label>
                     <div class="input-group">
-                      <input type="text" class="form-control" id="username" placeholder="Username" required>
-                      <div class="invalid-feedback">
-                        Your username is required.
-                      </div>
+                      <input name="account" type="text" class="form-control" id="username" placeholder="Username">
                     </div>
                   </div>
 
                   <div class="mb-3">
                     <label for="email">Email <span class="text-muted"></span></label>
-                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                    <div class="invalid-feedback">
-                      Please enter a valid email address for shipping updates.
-                    </div>
-                    
+                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com">
                   </div>
 
                   <div class="mb-3">
-                    <label for="email">Phone Number <span class="text-muted"></span></label>
-                    <input type="email" class="form-control" id="email" placeholder="Your Phone number" required>
-                    <div class="invalid-feedback">
-                      Please enter a valid email address for shipping updates.
-                    </div>
-                    
+                    <label for="contact">Phone Number <span class="text-muted"></span></label>
+                    <input name="contact" type="" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
-                  <input type="submit" value="Register">
-                  
-            <!-- /.row -->
+                  <input type="button" value="Register" onClick="check_data()">
                 </form>
               </div>
             </div>
           </div>
-  
   </body>
 
 </html>
