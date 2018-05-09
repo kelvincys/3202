@@ -133,15 +133,19 @@
     </div>
    
     <?php
-      $id = $_GET["id"];
-      if ($id ==1){
-        echo "<script type='text/javascript'>loadproposal();</script>";
-      } elseif ($id==2){
-        echo "<script type='text/javascript'>loadbirthday();</script>";
-      } elseif ($id==3){
-        echo "<script type='text/javascript'>loadwedding();</script>";
-      } else{
+      if(isset($_GET["id"])){
+        $id = $_GET["id"];
+        if ($id ==1){
+          echo "<script type='text/javascript'>loadproposal();</script>";
+        } elseif ($id==2){
+          echo "<script type='text/javascript'>loadbirthday();</script>";
+        } elseif ($id==3){
+          echo "<script type='text/javascript'>loadwedding();</script>";
+        } else{
          echo "<script type='text/javascript'>loadproposal();</script>";
+        }
+      } else{
+        echo "<script type='text/javascript'>loadproposal();</script>";
       }
     ?>
 
