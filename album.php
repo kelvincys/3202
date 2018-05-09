@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item">
               <a href="services.php">
-              <span class="nav-link" href="#service">Services</span>
+              <span class="nav-link" href="#service?id=1">Services</span>
               <span class="line -right"></span>
                 <span class="line -top"></span>
                 <span class="line -left"></span>

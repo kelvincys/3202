@@ -59,7 +59,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="services.php">
+              <a href="services.php?id=1">
               <span class="nav-link" href="#service">Services</span>
               <span class="line -right"></span>
                 <span class="line -top"></span>
@@ -120,7 +120,7 @@
           <a onclick="loadproposal()">Sercet Proposal</a>
         </div>
         <div class="col-lg-4" style="text-align: center">
-          <a onclick="loadbirthday()"9>Birthday Party</a>
+          <a onclick="loadbirthday()">Birthday Party</a>
         </div>
         <div class="col-lg-4" style="text-align: center">
           <a onclick="loadwedding()">Wedding Party</a>
@@ -131,17 +131,21 @@
     <div id="content">
 
     </div>
-   s
+   
+    <?php
+      $id = $_GET["id"];
+      if ($id ==1){
+        echo "<script type='text/javascript'>loadproposal();</script>";
+      } elseif ($id==2){
+        echo "<script type='text/javascript'>loadbirthday();</script>";
+      } elseif ($id==3){
+        echo "<script type='text/javascript'>loadwedding();</script>";
+      } else{
+         echo "<script type='text/javascript'>loadproposal();</script>";
+      }
+    ?>
 
-    <script>
 
-      $(document).ready(function(){
-          var id = $('#id').val();
-          if (id==1){
-            loadproposal();
-          }
-          });
-    </script>
 
   </body>
 

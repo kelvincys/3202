@@ -127,7 +127,7 @@
           <section id="about" class="container-fluid">
           <h1 class="mt-5">The Event Organizing Expert</h1>
           <p>MOMENT® is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
-          <center><a  href="album.php"><button>Our past events</button></a>
+          <center><a  href="aboutus.php"><button>Know more about us</button></a>
       </section>
 
 
@@ -143,7 +143,7 @@
                   </div>
                 </div>
             </a>
-            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="birthday" >
+            <a href="services.php?id=2" id="birthday" >
                 <div class="photo">
                   <img src="assert/birthday.jpg" alt="birthday" class="pbutton">
                   <div class="middle">
@@ -151,7 +151,7 @@
                   </div>
                 </div>
             </a>
-            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="wedding" >
+            <a href="services.php?id=3" id="wedding" >
                 <div class="photo">
                   <img src="assert/004.jpg" alt="wedding" class="pbutton">
                   <div class="middle">

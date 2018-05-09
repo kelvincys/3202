@@ -56,7 +56,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="services.php">
+              <a href="services.php?id=1">
               <span class="nav-link" href="#service">Services</span>
               <span class="line -right"></span>
                 <span class="line -top"></span>

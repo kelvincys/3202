@@ -16,6 +16,7 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
+    <link href="css/service.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Concert+One|Fredericka+the+Great|Fredoka+One|Indie+Flower|Kaushan+Script|Love+Ya+Like+A+Sister|Righteous" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
