@@ -9,7 +9,7 @@ body, html {
   padding-top: 100px;
 }
 
-input[type=text], select, textarea {
+input[type=text], select, textarea, input[type=email], input[type=tel] {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */

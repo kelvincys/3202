@@ -19,7 +19,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/form-validation.js"></script>
 
   </head>
 
@@ -90,7 +89,7 @@
 
     <div id="poplog" class="modal">
   
-            <form class="login animate" action="/action_page.php">
+            <form class="login animate" action="/action_page.php" >
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -111,16 +110,16 @@
           </div>
 
           <section id="contact" class="container-fluid">
-            <form method="post" action="contacting.php">
+            <form method="post" action="contacting.php" onsubmit="return validateForm()" name="contact">
               <h1>Contact us</h1>
               <label for="name">Your Name</label>
               <input type="text" id="name" name="yname" placeholder="Your name..." required>
 
               <label for="number">Contact number</label>
-              <input type="text" id="number" name="cnumber" placeholder="Your phone number" required>
+              <input type="tel" id="number" name="cnumber" placeholder="Your phone number" required pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">
 
               <label for="email">Your email</label>
-              <input type="text" id="email" name="yemail" placeholder="Your email..." required>
+              <input type="email" id="email" name="yemail" placeholder="Your email..." required>
 
               <label for="enquiry">Your enquiry</label>
               <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px" required></textarea>
