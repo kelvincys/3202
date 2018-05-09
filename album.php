@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg fixed-top" >
       <div class="container">
       <div class="effect"></div>
-       <a class="navbar-brand" href="#">
+       <a class="navbar-brand" href="index.php">
           <img src="assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@
 
     <div id="poplog" class="modal">
   
-            <form class="login animate" action="/action_page.php">
+            <form class="login animate" action="checkpw.php" name="myForm">
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -103,7 +103,7 @@
               <div class="container">
                 <input type="username" placeholder="Enter Username" name="uname">
                 <input type="password" placeholder="Enter Password" name="psw">        
-                <button type="submit">Login</button>    
+                <input type="button" value="Login" onClick="check_data()" class="logbutton"> 
                 <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
