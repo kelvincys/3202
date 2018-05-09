@@ -1,9 +1,9 @@
 <?php
-  //清除 cookie 內容
+  //clear cookie
   setcookie("id", "");
   setcookie("passed", "");
 	
-  //將使用者導回主網頁
-  header("location:index.html");
+  //redirect the user
+  header("location:index.php");
   exit();
 ?>

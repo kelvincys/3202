@@ -2,29 +2,29 @@
   require_once("dbtools.inc.php");
   header("Content-type: text/html; charset=utf-8");
   
-  //取得表單資料
-  $account = $_POST["account"]; 
+  //get the information
+  $account = $_POST["username"]; 
   $email = $_POST["email"];
   $show_method = $_POST["show_method"]; 
 
-  //建立資料連接
+  //connect to database
   $link = create_connection();
 			
-  //檢查查詢的帳號是否存在
-  $sql = "SELECT name, password FROM users WHERE 
-          account = '$account' AND email = '$email'";
-  $result = execute_sql($link, "member", $sql);
+  //check if the account exist
+  $sql = "SELECT username, password FROM user WHERE 
+          username = '$username' AND email = '$email'";
+  $result = execute_sql($link, "moment", $sql);
 
-  //如果帳號不存在
+  //if the account doesn't exist
   if (mysqli_num_rows($result) == 0)
   {
-    //顯示訊息告知使用者，查詢的帳號並不存在
+    //notice the user the account doesn't exist
     echo "<script type='text/javascript'>
-            alert('您所查詢的資料不存在，請檢查是否輸入錯誤。');
+            alert('The account doesn't exist, please check if the information is correct or);
             history.back();
           </script>";
   }
-  else  //如果帳號存在
+  else  //if the account exist
   {
     $row = mysqli_fetch_object($result);
     $name = $row->name;
@@ -37,33 +37,33 @@
           <meta charset='utf-8'>
         </head>
         <body>
-          $name 您好，您的帳號資料如下：<br><br>
-          　　帳號：$account<br>
-          　　密碼：$password<br><br>
-            <a href='http://localhost/ch19/index.html'>按此登入本站</a>
+          $name Your account information as below：<br><br>
+          　　Username：$account<br>
+          　　Password：$password<br><br>
+            <a href='http://localhost/ch19/index.html'>Press here to log in</a>
           </body>
       </html>
     ";
 	
-    if ($show_method == "網頁顯示")
+    if ($show_method == "show")
     {
-      echo $message;   //顯示訊息告知使用者帳號密碼
+      echo $message;   //show the account information
     }
     else
     {
-      $subject = "=?utf-8?B?" . base64_encode("帳號通知") . "?=";
+      $subject = "=?utf-8?B?" . base64_encode("account message") . "?=";
       $headers  = "MIME-Version: 1.0\r\nContent-type: text/html; charset=utf-8\r\n";
       mail($email, $subject, $message, $headers);	
 
-      //顯示訊息告知帳號密碼已寄至其電子郵件了
-      echo "$name 您好，您的帳號資料已經寄至 $email<br><br>
-            <a href='index.html'>按此登入本站</a>";				
+      //notice the user the email has been sent
+      echo "$name Your information has been sent to $email<br><br>
+            <a href='index.html'>Press here to login</a>";				
     }
   }
 
-  //釋放 $result 佔用的記憶體
+  //release $result momery 
   mysqli_free_result($result);
 		
-  //關閉資料連接	
+  //close the connection to the database
   mysqli_close($link);
 ?>

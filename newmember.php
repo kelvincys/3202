@@ -12,30 +12,30 @@
   //Connect to the database
   $link = create_connection();
       
-  //檢查帳號是否有人申請
+  //check the username 
   $sql = "SELECT * FROM user Where  username= '$username'";
   $result = execute_sql($link, "moment", $sql);
 
-  //如果帳號已經有人使用
+  //if username has been used
   if (mysqli_num_rows($result) != 0)
   {
-    //釋放 $result 佔用的記憶體
+    //release $result memory
     mysqli_free_result($result);
     
-    //顯示訊息要求使用者更換帳號名稱
+    //Show message to change the username
     echo "<script type='text/javascript'>";
-    echo "alert('您所指定的帳號已經有人使用，請使用其它帳號');";
+    echo "alert('The username has been used, please change another username');";
     echo "history.back();";
     echo "</script>";
   }
   
-  //如果帳號沒人使用
+  //if the username is available
   else
   {
-    //釋放 $result 佔用的記憶體 
+    //release $result memory
     mysqli_free_result($result);
     
-    //執行 SQL 命令，新增此帳號
+    //run SQL command，add account
     $sql = "INSERT INTO user_detail (fname, lname, contact, email) 
             VALUES ('$fname', '$lname', '$contact', '$email')";
     $sql = "INSERT INTO user (username, password) 
@@ -44,7 +44,7 @@
     $result = execute_sql($link, "moment", $sql);
   }
   
-  //關閉資料連接  
+  //end the connection to database 
   mysqli_close($link);
 ?>
 <!doctype html>

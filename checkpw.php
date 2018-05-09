@@ -2,46 +2,46 @@
   require_once("dbtools.inc.php");
   header("Content-type: text/html; charset=utf-8");
 	
-  //取得表單資料
-  $account = $_POST["account"]; 	
+  //get the form information
+  $account = $_POST["username"]; 	
   $password = $_POST["password"];
 
-  //建立資料連接
+  //connect to the database
   $link = create_connection();
 					
-  //檢查帳號密碼是否正確
-  $sql = "SELECT * FROM users Where account = '$account' AND password = '$password'";
-  $result = execute_sql($link, "member", $sql);
+  //check whether the username and password are correct or not
+  $sql = "SELECT * FROM users Where username = '$username' AND password = '$password'";
+  $result = execute_sql($link, "moment", $sql);
 
-  //如果帳號密碼錯誤
+  //if the username and password are correct
   if (mysqli_num_rows($result) == 0)
   {
-    //釋放 $result 佔用的記憶體
+    //release $result memory
     mysqli_free_result($result);
 	
-    //關閉資料連接	
+    //end connection to the database
     mysqli_close($link);
 		
-    //顯示訊息要求使用者輸入正確的帳號密碼
+    //showing message when wrong information are filled in
     echo "<script type='text/javascript'>";
     echo "alert('Username or Password was entered incorrectly.');";
     echo "history.back();";
     echo "</script>";
   }
 	
-  //如果帳號密碼正確
+  //if the information is correct
   else
   {
-    //取得 id 欄位
+    //get id 
     $id = mysqli_fetch_object($result)->id;
 	
-    //釋放 $result 佔用的記憶體	
+    //release $result memory
     mysqli_free_result($result);
 		
-    //關閉資料連接	
+    //close the connection
     mysqli_close($link);
 
-    //將使用者資料加入 cookies
+    //add information to cookies
     setcookie("id", $id);
     setcookie("passed", "TRUE");		
     header("location:main.php");		
