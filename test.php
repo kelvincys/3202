@@ -24,7 +24,33 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/basic.js"></script>
+     <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        } 
+    </script>
 
 
   </head>
@@ -123,80 +149,29 @@
   
           </div>
 
+<button onclick="document.getElementById('testing').style.display='block'" class="logbutton">
+              <img src="assert/007.jpg"></button>
+  <div id="testing" class="modal">
+  
+            <form class="login animate" action="/action_page.php">
+                  
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('testing').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                <img src="assert/icon.png" alt="Avatar" class="avatar">
+                <h2 style="text-align:center">Log In</h2>
+                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
+              </div>
 
-    <div class="parallax"></div>
-    <!-- Page Content -->
-    <div class="sections">
-          <section id="about" class="container-fluid">
-          <h1 class="mt-5">The Event Organizing Expert</h1>
-          <p>MOMENT® is founded by a group of people who are passionate in creating unforgettable experiences. We guarantee you will have a perfect memory for every important moment of your life.</p>
-          <center><a  href="album.php"><button>Our past events</button></a>
-      </section>
-
-
-          <section id="service" class="container-fluid service">
-            <h1 class="mt-5">We Bring Your Dreams To Reality</h1>
-            <p>Discuss your plan with us and we will try their best to work it out, if you don't have a plan. We can customized an unique experience for you.</p>  
-            <center>
-            <a href="services.php?id=1"> 
-                <div class="photo">
-                  <img src="assert/propose.jpg" alt="proposal" class="pbutton">
-                  <div class="middle">
-                <div class="caption">Secret proposal</div>
-                  </div>
-                </div>
-            </a>
-            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="birthday" >
-                <div class="photo">
-                  <img src="assert/birthday.jpg" alt="birthday" class="pbutton">
-                  <div class="middle">
-                <div class="caption">Birthday Party</div>
-                  </div>
-                </div>
-            </a>
-            <a href="#" onclick="document.location=this.id+'.php'; return false;" id="wedding" >
-                <div class="photo">
-                  <img src="assert/004.jpg" alt="wedding" class="pbutton">
-                  <div class="middle">
-                <div class="caption">Engage/Wedding Party</div>
-                  </div>
-                </div>
-            </a>
-            </center>
-          </section>
-
-
-          <section id="album" class="container-fluid">
-            <h1 class="mt-5">Amazing Moments Of Our Customers</h1>
-              <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>
-              <center><a  href="album.php"><button>Our past events</button></a></center>  
-          </section>
-
-
-          <section id="contact" class="container-fluid">
-            <form action="action_page.php" class="contactform">
-              <h1>Contact us</h1>
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="yname" placeholder="Your name..." required="">
-
-              <label for="number">Contact number</label>
-              <input type="text" id="number" name="cnumber" placeholder="Your last name..." required>
-
-              <label for="email">Your email</label>
-              <input type="text" id="email" name="yemail" placeholder="Your email..." required>
-
-              <label for="enquiry">Your enquiry</label>
-              <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px" required></textarea>
-
-              <input type="submit" value="Submit">
+              <div class="container">
+                <input type="username" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">        
+                <button type="submit">Login</button>    
+                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+              </div>
               
-
-            </form> 
-          </section>
-        </div>
-
-	</div>
-
+            </form>
+  
+    </div>
     <!-- /.container -->
     <script>
 $(document).ready(function(){

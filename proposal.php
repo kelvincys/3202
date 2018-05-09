@@ -57,19 +57,29 @@
     </center>
     <h1>Proposal</h1>
     
-        <!-- Trigger/Open The Modal -->
-        <button id="myBtn">Open Modal</button>
+        <button onclick="document.getElementById('testing').style.display='block'" class="logbutton">
+              <img src="assert/007.jpg" width="365"></button>
+          <div id="testing" class="modal">
+          
+                    <form class="login animate" action="/action_page.php">
+                          
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('testing').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                        <img src="assert/007.jpg" alt="product1" width="365">
+                        <h2 style="text-align:center">This is Proposal 1</h2>
+                        
+                      </div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-          </div>
-
-        </div> 
+                      <div class="container">
+                        <input type="username" placeholder="Enter Username" name="uname">
+                        <input type="password" placeholder="Enter Password" name="psw">        
+                        <button type="submit">Login</button>    
+                        <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+                      </div>
+                      
+                    </form>
+          
+            </div>
 
 
    
