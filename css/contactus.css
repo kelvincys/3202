@@ -6,7 +6,7 @@ body, html {
 }
 
 #contact{
-  padding-top: 100px;
+   padding: 100px 200px 0px 200px;
 }
 
 input[type=text], select, textarea, input[type=email], input[type=tel] {
@@ -58,10 +58,3 @@ input[type=button] {
     font-weight: bold;
 }
 
-#contact{
-  padding: 50px 200px 0px 200px;
-}
-
-section{
-    padding: 300px;
-}
