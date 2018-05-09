@@ -116,12 +116,7 @@
             <div class="row">
               <div class="col-md-12 order-md-1">
                 <h4>Join the MOMENT now</h4>
-<<<<<<< HEAD
-                
-                <form class="needs-validation" method="post" name="myForm">
-=======
                 <form class="needs-validation" method="post" id="registerform">
->>>>>>> 5488862d053af2cf5073c13d3a06f2c615039ede
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label for="firstName">First name</label>
@@ -134,11 +129,11 @@
                     
                     <div class="col-md-6 mb-3">
                       <label for="password">Password</label>
-                      <input name="password" type="password" class="form-control" id="password" placeholder="" value="">
+                      <input name="password" type="ypassword" class="form-control" id="password" placeholder="" value="">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="comfirmPassword">Comfirm password</label>
-                      <input name="re_password" type="password" class="form-control" id="comfirmPassword" placeholder="" value="">
+                      <input name="re_password" type="ypassword" class="form-control" id="comfirmPassword" placeholder="" value="">
                     </div>
                     
                   </div>
@@ -157,7 +152,7 @@
 
                   <div class="mb-3">
                     <label for="contact">Phone Number <span class="text-muted"></span></label>
-                    <input name="contact" type="" class="form-control" id="contact" placeholder="Your Phone number">
+                    <input name="contact" type="ynumber" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
                   <input type="button" value="Register" onClick="check_data()">
                 </form>
