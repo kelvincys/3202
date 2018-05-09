@@ -21,7 +21,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/basic.js"></script>
-  
+
+
 
   </head>
 
@@ -99,7 +100,7 @@
 
     <div id="poplog" class="modal">
   
-            <form class="login animate" action="/action_page.php" name="myForm">
+            <form class="login animate" action="/action_page.php">
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -109,10 +110,10 @@
               </div>
 
               <div class="container">
-                <input type="username" placeholder="Enter Username" name="account">
-                <input type="password" placeholder="Enter Password" name="password">        
-                <input type="button" value="login" onClick="check_data()" class="logbutton">    
-                <a href="search_pwd.html" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+                <input type="username" placeholder="Enter Username" name="uname">
+                <input type="password" placeholder="Enter Password" name="psw">        
+                <button type="submit" class="clogin">Login</button>    
+                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
             </form>
@@ -192,6 +193,13 @@
         </div>
 
 	</div>
+
+    <!-- /.container -->
+    <script>
+$(document).ready(function(){
+    $('body').scrollspy({target: ".navbar", offset: 50});   
+});
+    </script>
   
   </body>
 
