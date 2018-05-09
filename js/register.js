@@ -1,11 +1,11 @@
 function check_data()
       {
-        if (document.myForm.account.value.length == 0)
+        if (document.myForm.username.value.length == 0)
         {
           alert("Please fill in your username");
           return false;
         }
-        if (document.myForm.account.value.length > 50)
+        if (document.myForm.username.value.length > 50)
         {
           alert("Username cannot be more than 50units");
           return false;
@@ -34,7 +34,7 @@ function check_data()
         {
           alert("Please fill in your first name");
           return false;
-        }	
+        } 
         if (document.myForm.fname.value.length > 50)
         {
           alert("Your first name cannot be longer than 50units");
@@ -49,5 +49,6 @@ function check_data()
         {
           alert("Your last name cannot be longer than 50units");
           return false;
-        myForm.submit();					
-      }};
+        }
+        myForm.submit();          
+      };
