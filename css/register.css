@@ -14,7 +14,7 @@ label {
 }
 
 
-input[type=text], select, textarea, input[type=email], input[type=password]{
+#registerform input[type=text], select, textarea, input[type=email], #registerform input[type=password]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */
@@ -62,12 +62,10 @@ input[type=button] {
     font-weight: bold;
 }
 
-form{
-  padding: 50px 200px 0px 200px;
-}
-
 h4{
     text-align: center;
 }
 
-button{}
+#registerform{
+    padding: 50px 200px 0px 200px;
+}

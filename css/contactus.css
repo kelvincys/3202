@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     background-color: transparent;
     position: relative;
-
+    color: #ffb7c5;
 }
 
 #contact{
@@ -58,6 +58,6 @@ input[type=button] {
     font-weight: bold;
 }
 
-form{
+#contact{
   padding: 50px 200px 0px 200px;
 }

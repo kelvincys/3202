@@ -110,33 +110,12 @@
   
           </div>
 
-    <div id="poplog" class="modal">
-  
-            <form class="login animate" action="/action_page.php">
-                  
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                <img src="assert/icon.png" alt="Avatar" class="avatar">
-                <h2 style="text-align:center">Log In</h2>
-                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
-              </div>
-
-              <div class="container">
-                <input type="username" placeholder="Enter Username" name="uname">
-                <input type="password" placeholder="Enter Password" name="psw">        
-                <button type="submit">Login</button>    
-                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
-              </div>
-              
-            </form>
-  
-          </div>
 
           <div class="container-fluid" id="register">
             <div class="row">
               <div class="col-md-12 order-md-1">
                 <h4>Join the MOMENT now</h4>
-                <form class="needs-validation" method="post">
+                <form class="needs-validation" method="post" id="registerform">
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label for="firstName">First name</label>
