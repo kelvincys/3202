@@ -37,16 +37,28 @@
     //run SQL command，add account
     $sql = "INSERT INTO user (username, password_hash) 
             VALUES ('$username', '$password')";
+            //or die("1");
     $result = execute_sql($link, "moment", $sql);
-    $sql = "SELECT MAX(user_id) as 'max_id' FROM user";
-    $$result = execute_sql($link, "moment", $sql);
-    $row = mysqli_fetch_array($result);
-    $newid = $row['max_id'];    
-    
-    $sql = "INSERT INTO user_detail (user_id, fname, lname, contact, email) 
-            VALUES ('$newid','$fname', '$lname', '$contact', '$email')";
+    //or die("2");
+    $sql1 = "SELECT MAX(user_id) as 'max_id' FROM user"
+    or die("3");
+    $result1 = execute_sql($link, "moment", $sql1)
+    or die("4");
+    $row = mysqli_fetch_array($result1,MYSQLI_ASSOC)
+    or die("5");
+    echo $row['max_id'];
+    $newid = $row['max_id']
+    or die("6");
 
-    $result = execute_sql($link, "moment", $sql);
+    echo $newid;
+    
+    $sql2 = "INSERT INTO user_detail (user_id, fname, lname, contact, email) 
+            VALUES ('$newid','$fname', '$lname', '$contact', '$email')"
+
+    or die("6");
+
+    $result = execute_sql($link, "moment", $sql2)
+    or die("7");
     
 
     //$sql = "INSERT INTO user (username, password_hash) 
