@@ -10,40 +10,24 @@
   $link = create_connection();
 					
   //check whether the username and password are correct or not
-  $sql = "SELECT * FROM user Where username = '$username' AND password_hash = '$password'";
-  $result = execute_sql($link, "moment", $sql);
-
-  //if the username and password are correct
-  if (mysqli_num_rows($result) == 0)
-  {
-    //release $result memory
-    mysqli_free_result($result);
-	
-    //end connection to the database
-    mysqli_close($link);
-		
-    //showing message when wrong information are filled in
-    echo "<script type='text/javascript'>";
-    echo "alert('Username or Password was entered incorrectly.');";
-    echo "history.back();";
-    echo "</script>";
+  session_start();
+  if(isset($_POST["username"]) && isset($_POST["password"])){
+  //繫結登入會員資料
+  $query_RecLogin = "SELECT username, password, FROM user WHERE username=?";
+  $stmt=$db_link->prepare($query_RecLogin);
+  $stmt->bind_param("s", $_POST["username"]);
+  $stmt->execute();
+  //取出帳號密碼的值綁定結果
+  $stmt->bind_result($username, $password); 
+  $stmt->fetch();
+  $stmt->close();
+  //比對密碼，若登入成功則呈現登入狀態
+  if(password_verify($_POST["password"],$password)){
+    //設定登入者的名稱及等級
+    $_SESSION["loginMember"]=$username;
+    $_SESSION["memberLevel"]=$level;
+    //若帳號等級為 member 則導向會員中心
+    header("Location: index.php?errMsg=1");
   }
-	
-  //if the information is correct
-  else
-  {
-    //get id 
-    $id = mysqli_fetch_object($result)->id;
-	
-    //release $result memory
-    mysqli_free_result($result);
-		
-    //close the connection
-    mysqli_close($link);
-
-    //add information to cookies
-    setcookie("id", $id);
-    setcookie("passed", "TRUE");		
-    header("location:main.php");		
-  }
+}
 ?>

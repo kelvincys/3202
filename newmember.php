@@ -3,12 +3,11 @@
   
   //get the information of the form
   $username = $_POST["username"];
-  $password = $_POST["password"]; 
   $fname = $_POST["fname"]; 
   $lname = $_POST["lname"]; 
   $contact = $_POST["contact"]; 
   $email = $_POST["email"];   
-
+  $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
   //Connect to the database
   $link = create_connection();
       
@@ -36,12 +35,26 @@
     mysqli_free_result($result);
     
     //run SQL command，add account
-    $sql = "INSERT INTO user_detail (fname, lname, contact, email) 
-            VALUES ('$fname', '$lname', '$contact', '$email')";
     $sql = "INSERT INTO user (username, password_hash) 
             VALUES ('$username', '$password')";
+    $result = execute_sql($link, "moment", $sql);        
+    
+    $sql = "INSERT INTO user_detail (fname, lname, contact, email) 
+            VALUES ('$fname', '$lname', '$contact', '$email')
+            WHERE 'user_detail.user_id' = '";
 
     $result = execute_sql($link, "moment", $sql);
+    
+
+    //$sql = "INSERT INTO user (username, password_hash) 
+            //VALUES ('$username', '$password')";
+    //$result = execute_sql($link, "moment", $sql);
+   // $sql1 = "SELECT MAX(user_id) FROM user";
+    //$id1 = execute_sql($link, "moment", $sql1);
+    //var $id = mysql_result($id1, 0);
+   // $sql2 = "INSERT INTO user_detail (user_id, fname, lname, contact, email) 
+            //VALUES ('$id','$fname', '$lname', '$contact', '$email')";
+    //$result = execute_sql($link, "moment", $sql2);
   }
   
   //end the connection to database 
@@ -57,7 +70,7 @@
   <body bgcolor="#FFFFFF">      
     <p align="center">Thank you for joining the MOMENT!<br>
       Your username：<font color="#FF0000"><?php echo $username ?></font><br>
-      Your password：<font color="#FF0000"><?php echo $password ?></font><br>       
+      Your password：<font color="#FF0000"><?php echo $_POST["password"] ?></font><br>       
       You will be redirect to the home page in 5 second, if it doesn't please press <a href="index.php">here</a>
     </p>
   </body>
