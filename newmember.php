@@ -37,11 +37,14 @@
     //run SQL command，add account
     $sql = "INSERT INTO user (username, password_hash) 
             VALUES ('$username', '$password')";
-    $result = execute_sql($link, "moment", $sql);        
+    $result = execute_sql($link, "moment", $sql);
+    $sql = "SELECT MAX(user_id) as 'max_id' FROM user";
+    $$result = execute_sql($link, "moment", $sql);
+    $row = mysqli_fetch_array($result);
+    $newid = $row['max_id'];    
     
-    $sql = "INSERT INTO user_detail (fname, lname, contact, email) 
-            VALUES ('$fname', '$lname', '$contact', '$email')
-            WHERE 'user_detail.user_id' = '";
+    $sql = "INSERT INTO user_detail (user_id, fname, lname, contact, email) 
+            VALUES ('$newid','$fname', '$lname', '$contact', '$email')";
 
     $result = execute_sql($link, "moment", $sql);
     
