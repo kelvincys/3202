@@ -5,5 +5,6 @@
 	$message = "Dear".$name."We will reply you soon";
 	$headers = "From: kelvinchungkw@gmail.com";
 	mail($to,$subject,$message,$headers);
-	
+	header('Location: ' . $_SERVER['HTTP_REFERER']);
+	exit;
 ?>
