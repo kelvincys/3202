@@ -1,7 +1,7 @@
 <?php
   function create_connection()
   {
-    $link = mysqli_connect("localhost", "root", "Hcw12877")
+    $link = mysqli_connect("localhost", "root", "3202")
       or die("Fail to connect datebase: " . mysqli_connect_error());
 	  
     mysqli_query($link, "SET NAMES utf8");
