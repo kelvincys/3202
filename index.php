@@ -99,7 +99,7 @@
 
     <div id="poplog" class="modal">
   
-            <form class="login animate" action="checkpw.php" name="myForm">
+            <form class="login animate" action="checkpw.php" name="myForm" method="post">
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>

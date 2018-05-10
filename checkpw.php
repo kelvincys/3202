@@ -5,7 +5,6 @@
   //get the form information
   $username = $_POST["username"]; 	
   $password = $_POST["password"];
-
   //connect to the database
   $link = create_connection();
 					
@@ -13,9 +12,8 @@
   session_start();
   if(isset($_POST["username"]) && isset($_POST["password"])){
   //繫結登入會員資料
-  $query_RecLogin = "SELECT username, password, FROM user WHERE username=?";
-  $stmt=$db_link->prepare($query_RecLogin);
-  $stmt->bind_param("s", $_POST["username"]);
+  $stmt=$link->prepare("SELECT username, password_hash FROM user WHERE username=?");
+  $stmt->bind_param("s", $_POST["username"]) or die(2);
   $stmt->execute();
   //取出帳號密碼的值綁定結果
   $stmt->bind_result($username, $password); 
@@ -24,10 +22,10 @@
   //比對密碼，若登入成功則呈現登入狀態
   if(password_verify($_POST["password"],$password)){
     //設定登入者的名稱及等級
-    $_SESSION["loginMember"]=$username;
-    $_SESSION["memberLevel"]=$level;
+    $_SESSION["username"]=$username;
+    $_SESSION["logined"]="1";
     //若帳號等級為 member 則導向會員中心
-    header("Location: index.php?errMsg=1");
+    header("Location: index.php");
   }
 }
 ?>
