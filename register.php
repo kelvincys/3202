@@ -116,28 +116,27 @@
               <div class="col-md-12 order-md-1">
                 <h4>Join the MOMENT now</h4>
                 
-                <form action="newmember.php" method="post" name="myForm">
+                <form action="newmember.php" method="post" name="mynewForm">
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label for="firstName">First name</label>
-                      <input name="fname" type="text" class="form-control" id="firstName" placeholder="" value="">
+                      <input name="fname" type="text" class="form-control" id="firstName" placeholder="">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="lastName">Last name</label>
-                      <input name="lname" type="text" class="form-control" id="lastName" placeholder="" value="">
+                      <input name="lname" type="text" class="form-control" id="lastName" placeholder="">
                     </div>
                     
                     <div class="col-md-6 mb-3">
                       <label for="password">Password</label>
-                      <input name="password" type="password" class="form-control" id="password" placeholder="" value="">
+                      <input name="password" type="password" class="form-control" id="password" placeholder="">
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="comfirmPassword">Comfirm password</label>
-                      <input name="re_password" type="password" class="form-control" id="comfirmPassword" placeholder="" value="">
+                      <input name="re_password" type="password" class="form-control" id="comfirmPassword" placeholder="">
                     </div>
                     
                   </div>
-
                   <div class="mb-3">
                     <label for="username">Username</label>
                     <div class="input-group">
@@ -152,9 +151,9 @@
 
                   <div class="mb-3">
                     <label for="contact">Phone Number <span class="text-muted"></span></label>
-                    <input name="contact" type="" class="form-control" id="contact" placeholder="Your Phone number">
+                    <input name="contact" type="contact" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
-                  <input type="button" value="Register" onClick="check_data()">
+                  <input type="button" value="Register" onClick="check_info()">
                   <input type="reset" value="Reset" class="logbutton">
                 </form>
               </div>

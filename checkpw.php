@@ -3,14 +3,14 @@
   header("Content-type: text/html; charset=utf-8");
 	
   //get the form information
-  $account = $_POST["username"]; 	
+  $username = $_POST["username"]; 	
   $password = $_POST["password"];
 
   //connect to the database
   $link = create_connection();
 					
   //check whether the username and password are correct or not
-  $sql = "SELECT * FROM users Where username = '$username' AND password = '$password'";
+  $sql = "SELECT * FROM user Where username = '$username' AND password_hash = '$password'";
   $result = execute_sql($link, "moment", $sql);
 
   //if the username and password are correct

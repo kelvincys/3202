@@ -22,7 +22,7 @@
 
 function check_data()
           {
-            if (document.myForm.account.value.length == 0)
+            if (document.myForm.username.value.length == 0)
               alert("Please fill in the username");
             else if (document.myForm.password.value.length == 0)
               alert("Please fill in the password");

@@ -38,7 +38,7 @@
     //run SQL command，add account
     $sql = "INSERT INTO user_detail (fname, lname, contact, email) 
             VALUES ('$fname', '$lname', '$contact', '$email')";
-    $sql = "INSERT INTO user (username, password) 
+    $sql = "INSERT INTO user (username, password_hash) 
             VALUES ('$username', '$password')";
 
     $result = execute_sql($link, "moment", $sql);
