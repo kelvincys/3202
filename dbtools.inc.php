@@ -5,7 +5,6 @@
       or die("Fail to connect datebase: " . mysqli_connect_error());
 	  
     mysqli_query($link, "SET NAMES utf8");
-			   	
     return $link;
   }
 	
