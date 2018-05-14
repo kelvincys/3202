@@ -10,11 +10,10 @@
 					
   //check whether the username and password are correct or not
   session_start();
-  mysqli_report(MYSQLI_REPORT_ALL);
   if(isset($_POST["username"]) && isset($_POST["password"])){
   //繫結登入會員資料
   $stmt= $link -> prepare ( "SELECT username, password_hash FROM user WHERE username=?" );
-  $stmt->bind_param("s", $_POST["username"]) or die(2);
+  $stmt->bind_param("s", $_POST["username"]) or die(mysqli_error($link));
   $stmt->execute();
   //取出帳號密碼的值綁定結果
   $stmt->bind_result($username, $password); 

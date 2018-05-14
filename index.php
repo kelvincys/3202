@@ -1,3 +1,7 @@
+<?php
+include 'logined.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
