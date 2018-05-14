@@ -89,7 +89,7 @@
 
     <div id="poplog" class="modal">
   
-            <form class="login animate" action="checkpw.php" name="myForm">
+            <form class="login animate" action="checkpw.php" name="myForm" method="post">
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
@@ -99,10 +99,10 @@
               </div>
 
               <div class="container">
-                <input type="username" placeholder="Enter Username" name="uname">
-                <input type="password" placeholder="Enter Password" name="psw">        
-                <input type="button" value="Login" onClick="check_data()" class="logbutton">
-                <a href="#" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+                <input type="username" placeholder="Enter Username" name="username">
+                <input type="password" placeholder="Enter Password" name="password">        
+                <input type="button" value="Login" onClick="check_data()" class="logbutton">    
+                <a href="search_pwd.html" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
             </form>
