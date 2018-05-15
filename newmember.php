@@ -24,10 +24,8 @@
     //Show message to change the username
     echo "<script type='text/javascript'>";
     echo "alert('The username has been used, please change another username');";
-    echo "history.back();";
     echo "</script>";
   }
-  
   //if the username is available
   else
   {
@@ -44,23 +42,11 @@
     $result1 = execute_sql($link, "moment", $sql1);
 
     $row = mysqli_fetch_array($result1,MYSQLI_ASSOC);
-    $newid = $row['max_id'];
+    $newid = $row['max_id'];//TODO get the last id has a built-in function in php
     echo $newid;    
     $sql = "INSERT INTO user_detail (user_id, firstname, lastname, contact, email) 
             VALUES ('$newid','$fname', '$lname', '$contact', '$email')";
-    $result = execute_sql($link, "moment", $sql)
-    or die("7");
-    
-
-    //$sql = "INSERT INTO user (username, password_hash) 
-            //VALUES ('$username', '$password')";
-    //$result = execute_sql($link, "moment", $sql);
-   // $sql1 = "SELECT MAX(user_id) FROM user";
-    //$id1 = execute_sql($link, "moment", $sql1);
-    //var $id = mysql_result($id1, 0);
-   // $sql2 = "INSERT INTO user_detail (user_id, fname, lname, contact, email) 
-            //VALUES ('$id','$fname', '$lname', '$contact', '$email')";
-    //$result = execute_sql($link, "moment", $sql2);
+    $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
   }
   
   //end the connection to database 

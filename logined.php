@@ -1,8 +1,17 @@
 <?php
 
 session_start();
-$_SESSION['login'] = "1";
 if(isset($_SESSION['login'])){
-	echo 1;
+	echo "</li>";
+	echo "<li class='nav-item'>";
+    echo "<a href='#contact'>";
+    echo "<span class='nav-link' >User Profile</span>";
+    echo "<span class='line -right'></span>";
+    echo "<span class='line -top'></span>";
+    echo "<span class='line -left'></span>";
+    echo "<span class='line -bottom'></span>";
+    echo "</a>";
+} else{
+	echo "<button onclick='document.getElementById('poplog').style.display='block'' class='logbutton' id='loginbutton'>Login/Sign Up</button>";          
 }
 ?>
