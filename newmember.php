@@ -14,7 +14,7 @@
   //check the username 
   $sql = "SELECT * FROM user Where  username= '$username'";
   $result = execute_sql($link, "moment", $sql);
-
+  
   //if username has been used
   if (mysqli_num_rows($result) != 0)
   {

@@ -17,7 +17,6 @@ input[type=text], select, textarea, input[type=email], input[type=tel] {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: 8px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-    background-color: black;
 }
 
 input, textarea {
