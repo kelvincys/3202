@@ -1,7 +1,3 @@
-<?php
-include 'logined.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -93,8 +89,9 @@ include 'logined.php';
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
-              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" id="loginbutton">
-              Login/Sign Up</button>
+              <?php
+include 'logined.php';
+?>
             </li>
           </ul>
         </div>

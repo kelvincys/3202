@@ -73,6 +73,7 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
+            </li>
             <li class="nav-item">
               <a href="contactus.php">
               <span class="nav-link" >Contact</span>
@@ -81,6 +82,8 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
+            </li>
+            <li class="nav-item">
               <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
               Login/Sign Up</button>
             </li>

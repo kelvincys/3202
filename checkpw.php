@@ -25,7 +25,7 @@
     $_SESSION["username"]=$username;
     $_SESSION["logined"]="1";
     //若帳號等級為 member 則導向會員中心
-    header("Location: index.php");
+    header('Location:' . $_SERVER['HTTP_REFERER']);
   }
 }
 ?>
