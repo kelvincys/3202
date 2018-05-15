@@ -51,3 +51,4 @@ function check_info() {
         }
         mynewForm.submit();          
       };
+

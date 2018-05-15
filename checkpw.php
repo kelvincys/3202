@@ -13,7 +13,7 @@
   mysqli_report(MYSQLI_REPORT_ALL);
   if(isset($_POST["username"]) && isset($_POST["password"])){
   //繫結登入會員資料
-  $stmt= $link->prepare( "SELECT username, password_hash FROM user WHERE username=?" );
+  $stmt= $link->prepare("SELECT username, password_hash FROM user WHERE username=?");
   $stmt->bind_param("s", $_POST["username"]) or die(2);
   $stmt->execute();
   //取出帳號密碼的值綁定結果
