@@ -35,18 +35,15 @@
     //run SQL command，add account
     $sql = "INSERT INTO user (username, password_hash) 
             VALUES ('$username', '$password')";
-            //or die("1");
-    $result = execute_sql($link, "moment", $sql);
-    //or die("2");
-    $sql1 = "SELECT MAX(user_id) as 'max_id' FROM user";
-    $result1 = execute_sql($link, "moment", $sql1);
-
-    $row = mysqli_fetch_array($result1,MYSQLI_ASSOC);
-    $newid = $row['max_id'];//TODO get the last id has a built-in function in php
-    echo $newid;    
+    if ($link ->query($sql) === TRUE){
+          $newid = $link->insert_id;   
     $sql = "INSERT INTO user_detail (user_id, firstname, lastname, contact, email) 
             VALUES ('$newid','$fname', '$lname', '$contact', '$email')";
     $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+    }else {
+      echo mysqli_error($link);
+    }
+
   }
   
   //end the connection to database 
