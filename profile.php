@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(!isset($_SESSION['login'])){
+  //header('Location:' . $_SERVER['HTTP_REFERER']);
+}else{
+ // include("dbtools.inc.php");
+  //$link = create_connection();
+}
+  $_SESSION['userid'] ="5";
+  echo $_SESSION['userid'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,11 +26,10 @@
 
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
-    <link href="css/contactus.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
 
   </head>
 
@@ -80,38 +90,45 @@
                 <span class="line -left"></span>
                 <span class="line -bottom"></span>
               </a>
-              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
-              Login/Sign Up</button>
+            </li>
+            <li class="nav-item">
+              <a href="profile.php">
+              <span class="nav-link" >User Profile</span>
+              <span class="line -right"></span>
+                <span class="line -top"></span>
+                <span class="line -left"></span>
+                <span class="line -bottom"></span>
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="poplog" class="modal">
-  
-            <form class="login animate" action="checkpw.php" name="myForm" method="post">
-                  
-              <div class="imgcontainer">
-                <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                <img src="assert/icon.png" alt="Avatar" class="avatar">
-                <h2 style="text-align:center">Log In</h2>
-                <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
-              </div>
-
-              <div class="container">
-                <input type="username" placeholder="Enter Username" name="username">
-                <input type="password" placeholder="Enter Password" name="password">        
-                <input type="button" value="Login" onClick="check_data()" class="logbutton">    
-                <a href="search_pwd.html" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
-              </div>
-              
-            </form>
-  
+      <div class="container-fluid" id="content">
+        <div class="row">
+          <div class="col-lg-4" id="userpicture">
+            <img src="http://d2h2vnfmmg5sct.cloudfront.net/catalog/product/large_image/00_400325.jpg" class="userphoto">
           </div>
+          <div class="col-lg-8">
+            <?php
+            include("dbtools.inc.php");
+            $link = create_connection();
+            $userid = $_SESSION['userid'];
+            $sql = "SELECT * FROM user INNER JOIN user_detail ON user.user_id = user_deatil.user_id WHERE  user.user_id= '$userid'";
+            $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+            echo "<table>"; // start a table tag in the HTML
 
+            while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
+            echo "<tr><td>" . $row['username'] . "</td></tr>";  //$row['index'] the index here is a field name
+            }
 
+            echo "</table>"; //Close the table in HTML
 
+            ?>
+          </div>
+        </div>
+      </div>
   
   </body>
 

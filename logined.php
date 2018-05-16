@@ -3,7 +3,7 @@
     session_start();
     if(!isset($_SESSION['login'])){
         echo"";
-    }
+    
 ?>
     <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" >
               Login/Sign Up</button>
@@ -13,7 +13,7 @@
         { 
             session_start(); 
         } 
-    } else{
+    } else {
 ?>
     </li>
     <li class="nav-item">
@@ -25,5 +25,5 @@
     <span class="line -bottom"></span>
     </a>
 <?php
-    
+   } 
 ?>
