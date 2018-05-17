@@ -85,8 +85,9 @@
               </a>
             </li>
             <li class="nav-item">
-              <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton">
-              Login/Sign Up</button>
+              <?php
+                include 'logined.php';
+              ?>
             </li>
           </ul>
         </div>
