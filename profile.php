@@ -128,6 +128,7 @@ if(!isset($_SESSION['login'])){
 
             ?>
             <a href="edit.php"><button>Edit Profile</button></a>
+            <a href="logout.php"><button>Logout</button></a>
           </div>
         </div>
       </div>

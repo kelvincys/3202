@@ -1,9 +1,7 @@
 <?php
-  //clear cookie
-  setcookie("id", "");
-  setcookie("passed", "");
-	
-  //redirect the user
-  header("location:index.php");
-  exit();
+    session_start();    
+    //end the session
+    session_destroy();
+    //redirect user to home page
+    header("location:index.php");
 ?>

@@ -109,10 +109,10 @@ if(!isset($_SESSION['login'])){
       </div>
     </nav>
 
-          <div class="container-fluid" id="register">
+          <div class="container-fluid" id="registerform">
             <div class="row">
               <div class="col-md-12 order-md-1">
-                <h4>Renew Your Account Detail</h4>
+                <h4>Update Your Detail</h4>
                 
                 <form action="editdetail.php" method="post" name="mynewForm">
                   <div class="row">
@@ -153,7 +153,7 @@ if(!isset($_SESSION['login'])){
                     <label for="contact">Phone Number <span class="text-muted"></span></label>
                     <input name="contact" type="contact" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
-                  <input type="button" value="Register" onClick="check_info()">
+                  <input type="button" value="Update" onClick="check_info()">
                   <input type="reset" value="Reset" class="logbutton">
                 </form>
               </div>

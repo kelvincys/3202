@@ -115,7 +115,7 @@
   
           </div>
 
-          <div class="container-fluid" id="register">
+          <div class="container-fluid" id="registerform">
             <div class="row">
               <div class="col-md-12 order-md-1">
                 <h4>Join the MOMENT now</h4>

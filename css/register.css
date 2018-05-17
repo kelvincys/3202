@@ -14,7 +14,7 @@ label {
 }
 
 
-#registerform input[type=text], select, textarea, input[type=email], #registerform input[type=ypassword] ,#registerform input[type=ynumber], button{
+#registerform input[type=text], textarea, input[type=email], #registerform input[type=password] ,#registerform input[type=contact]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */
@@ -51,7 +51,7 @@ h1, p{
   padding: 0px 100px 0px 100px;
 }
 
-input[type=button] {
+input[type=button], input[type=reset] {
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -65,5 +65,6 @@ h4{
 }
 
 #registerform{
-    padding: 50px 200px 0px 200px;
+    padding: 100px 200px 0px 200px;
+    position: absolute;
 }
