@@ -187,12 +187,3 @@ label {
   font-family: 'Love Ya Like A Sister', cursive;
   font-family: 'Fredericka the Great', cursive;
 }
-
-button{
-    color: #ff849c;
-    padding: 6px 10px;
-    border: solid #ff849c;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}

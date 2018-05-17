@@ -119,10 +119,10 @@
         </div>
 
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" align="center">
-            <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="proposal">Secret Proposal</button>
-            <button class="btn btn-default filter-button" data-filter="wedding">Wedding Party</button>
-            <button class="btn btn-default filter-button" data-filter="birthday">Birthday Party</button>
+            <button class="filter-button" data-filter="all">All</button>
+            <button class="filter-button" data-filter="proposal">Secret Proposal</button>
+            <button class="filter-button" data-filter="wedding">Wedding Party</button>
+            <button class="filter-button" data-filter="birthday">Birthday Party</button>
 
         </div>
         <br>
