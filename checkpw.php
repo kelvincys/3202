@@ -27,8 +27,9 @@
     $_SESSION["logined"]="1";
 
     echo $_SESSION["id"];
+    echo $_SESSION["logined"];
     //若帳號等級為 member 則導向會員中心
-    //header('Location:' . $_SERVER['HTTP_REFERER']);
+    header('Location:' . $_SERVER['HTTP_REFERER']);
   } else {
     echo "fail";
   }

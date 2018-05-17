@@ -9,6 +9,7 @@ if(!isset($_SESSION['login'])){
   $_SESSION['userid'] ="5";
   echo $_SESSION['userid'];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,16 +21,19 @@ if(!isset($_SESSION['login'])){
     <meta name="author" content="">
 
     <title>Moment-The Wedding Party Expert</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/basic.css" rel="stylesheet">
-    <link href="css/profile.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
+    <link href="css/register.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/basic.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/valid.js"></script>
 
   </head>
 
@@ -105,33 +109,56 @@ if(!isset($_SESSION['login'])){
       </div>
     </nav>
 
-      <div class="container-fluid" id="content">
-        <div class="row">
-          <div class="col-lg-4" id="userpicture">
-            <img src="http://d2h2vnfmmg5sct.cloudfront.net/catalog/product/large_image/00_400325.jpg" class="userphoto">
+          <div class="container-fluid" id="register">
+            <div class="row">
+              <div class="col-md-12 order-md-1">
+                <h4>Renew Your Account Detail</h4>
+                
+                <form action="editdetail.php" method="post" name="mynewForm">
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">First name</label>
+                      <input name="fname" type="text" class="form-control" id="firstName" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Last name</label>
+                      <input name="lname" type="text" class="form-control" id="lastName" placeholder="">
+                    </div>
+                    
+                    <div class="col-md-6 mb-3">
+                      <label for="password">Password</label>
+                      <input name="password" type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="comfirmPassword">Comfirm password</label>
+                      <input name="re_password" type="password" class="form-control" id="comfirmPassword" placeholder="">
+                    </div>
+                    
+                  </div>
+                  <div class="mb-3">
+                    <label for="username">Username</label>
+                    <div class="input-group">
+                      <input name="username" type="text" class="form-control" id="username" placeholder="Username">
+                      <span id="user_status"></span>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email">Email <span class="text-muted"></span></label>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" >
+                    <span id="validate"></span>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="contact">Phone Number <span class="text-muted"></span></label>
+                    <input name="contact" type="contact" class="form-control" id="contact" placeholder="Your Phone number">
+                  </div>
+                  <input type="button" value="Register" onClick="check_info()">
+                  <input type="reset" value="Reset" class="logbutton">
+                </form>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-8">
-            <?php
-            include("dbtools.inc.php");
-            $link = create_connection();
-            $userid = $_SESSION['userid'];
-            $sql = "SELECT * FROM user INNER JOIN user_detail ON user.user_id = user_detail.user_id WHERE  user.user_id= '$userid'";
-            $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-            echo "<table>"; // start a table tag in the HTML
-
-            while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
-            echo "<tr><td>Username: " . $row["username"]. "</td></tr><tr><td>Name: " . $row["firstname"]. " " . $row["lastname"]. "</td></tr>";
-            echo "<tr><td>Email: " . $row["email"]. "</td></tr><tr><td>Contact Number: " . $row["contact"]. "</td></tr>";
-            }
-
-            echo "</table>"; //Close the table in HTML
-
-            ?>
-            <a href="edit.php"><button>Edit Profile</button></a>
-          </div>
-        </div>
-      </div>
-  
   </body>
 
 </html>

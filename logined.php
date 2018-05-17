@@ -1,8 +1,6 @@
-<script src="js/basic.js"></script>
 <?php
     session_start();
-    if(!isset($_SESSION['login'])){
-        echo"";
+    if(!isset($_SESSION['logined'])){
     
 ?>
     <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" >

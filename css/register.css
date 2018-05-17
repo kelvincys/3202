@@ -14,7 +14,7 @@ label {
 }
 
 
-#registerform input[type=text], select, textarea, input[type=email], #registerform input[type=ypassword] ,#registerform input[type=ynumber]{
+#registerform input[type=text], select, textarea, input[type=email], #registerform input[type=ypassword] ,#registerform input[type=ynumber], button{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */
