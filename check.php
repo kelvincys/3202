@@ -9,6 +9,7 @@
 	 $result = mysqli_query($link, $query);
 	 echo mysqli_num_rows($result);
 	}
+
 	if(isset($_POST["email"]))
 	{
 	 $email = mysqli_real_escape_string($link, $_POST["email"]);
@@ -16,4 +17,6 @@
 	 $result2 = mysqli_query($link, $sql);
 	 echo mysqli_num_rows($result2);
 	}
+
 ?>
+

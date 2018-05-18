@@ -108,7 +108,7 @@ if(!isset($_SESSION['login'])){
       <div class="container-fluid" id="content">
         <div class="row">
           <div class="col-lg-4" id="userpicture">
-            <img src="http://d2h2vnfmmg5sct.cloudfront.net/catalog/product/large_image/00_400325.jpg" class="userphoto">
+            <img src="http://d2h2vnfmmg5sct.cloudfront.net/catalog/product/large_image/00_400325.jpg" class="userphoto" height="100%">
           </div>
           <div class="col-lg-8">
             <?php
@@ -130,6 +130,18 @@ if(!isset($_SESSION['login'])){
             <div classs="profile0">
             <a href="edit.php"><button>Edit Profile</button></a>
             <a href="logout.php"><button>Logout</button></a>
+            </div>
+          </div>
+            <div class="col-lg-12">
+              <?php
+                $sql = "SELECT * FROM order_detail INNER JOIN service ON order_detail.service_id = service.service_id WHERE  order_detail.user_id= '$userid'";
+                $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+                echo "<table><tr><th>Order ID</th><th>Service Name</th></tr>";
+                while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
+                echo "<tr><td>" . $row["order_id"]. "</td><td>"  .$row["service_name"]. "</td></tr>";
+              }
+              echo "</table>"
+              ?>
             </div>
         </div>
       </div>
