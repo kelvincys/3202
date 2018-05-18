@@ -152,13 +152,8 @@
 
                   <div class="mb-3">
                     <label for="email">Email <span class="text-muted"></span></label>
-<<<<<<< HEAD
                     <input name="email" type="email" class="form-control" id="email_input" placeholder="you@example.com" >
                     <span id="estatus"></span>
-=======
-                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" >
-                    <span id="validate"></span>
->>>>>>> 9ac34b33b6595bd3804a21d063780a01c61472a3
                   </div>
 
                   <div class="mb-3">
