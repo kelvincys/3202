@@ -127,9 +127,10 @@ if(!isset($_SESSION['login'])){
             echo "</table>"; //Close the table in HTML
 
             ?>
+            <div classs="profile0">
             <a href="edit.php"><button>Edit Profile</button></a>
             <a href="logout.php"><button>Logout</button></a>
-          </div>
+            </div>
         </div>
       </div>
   

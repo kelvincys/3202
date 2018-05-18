@@ -21,7 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/basic.js"></script>
     <script src="js/register.js"></script>
-    <script src="js/valid.js"></script>
+    <script src="js/check.js"></script>
 
   </head>
 
@@ -145,14 +145,14 @@
                   <div class="mb-3">
                     <label for="username">Username</label>
                     <div class="input-group">
-                      <input name="username" type="text" class="form-control" id="username" placeholder="Username">
-                      <span id="user_status"></span>
+                      <input name="username" type="text" class="form-control" id="username_input" placeholder="Username">
+                      <span id="status"></span>
                     </div>
                   </div>
 
                   <div class="mb-3">
                     <label for="email">Email <span class="text-muted"></span></label>
-                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" onblur="validateemail();">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" >
                     <span id="validate"></span>
                   </div>
 
