@@ -8,18 +8,30 @@
   }
   echo $serviceid;
     
-    $sql = "INSERT INTO order_detail (user_id, service_id) 
-              VALUES ('$userid', '$serviceid')";
-    $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+  $sql = "INSERT INTO order_detail (user_id, service_id) 
+            VALUES ('$userid', '$serviceid')";
+  $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
     
 
   
 
-    $sql = "SELECT service_name FROM service WHERE service_id = $serviceid";
-    $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-    while($row = mysqli_fetch_assoc($result)){
-      $servicename = $row["service_name"];
-    }
+  $sql = "SELECT service_name FROM service WHERE service_id = $serviceid";
+  $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+  while($row = mysqli_fetch_assoc($result)){
+    $servicename = $row["service_name"];
+  }
+
+  $sql = "SELECT email, firstname, lastname FROM user_detail WHERE user_id = $userid";
+  $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+  while($row = mysqli_fetch_assoc($result)){
+    $to = $row["email"];
+    $name = $row["firstname"]."".$row["lastname"];
+  }
+
+  $subject = "Thank you for purchasing our service";
+  $message = "Dear".$name."We will reply you soon";
+  $headers = "From: kelvinchungkw@gmail.com";
+  mail($to,$subject,$message,$headers);
 
 
 ?>
