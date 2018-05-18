@@ -11,3 +11,12 @@
 	padding-left: 50px;
 	padding-top: 50px;
 }
+
+.profile button{
+	color: #ff849c;
+    padding: 6px 10px;
+    border: solid #ff849c;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
