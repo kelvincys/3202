@@ -20,7 +20,6 @@
 	$message = "Dear".$name. "\n Thank you for contacting us. \n We will reply you soon";
 	$headers = "From: kelvinchungkw@gmail.com";
 	mail($to,$subject,$message,$headers);
-	echo '<script type="text/javascript"> alert("Thank you for contact us, a confirmation email has been sent to you."); </script>';
 	header('Location: ' . $_SERVER['HTTP_REFERER']);
 	exit;
 ?>
