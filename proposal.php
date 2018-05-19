@@ -46,6 +46,10 @@
                 modal.style.display = "none";
             }
         } 
+
+        function openbox(){
+            document.getElementById('testing').style.display='block'
+        }
     </script>
   </head>
 
@@ -57,7 +61,7 @@
     </center>
     <h1>Proposal</h1>
     
-        <button onclick="document.getElementById('testing').style.display='block'" class="logbutton">
+        <button onclick="openbox()" class="logbutton">
               <img src="assert/007.jpg" width="365"></button>
           <div id="testing" class="modal">
           
@@ -86,7 +90,7 @@
           
             </div>
 
-
+<!-- document.getElementById('testing').style.display='block'-->
    
   </body>
 
