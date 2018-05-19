@@ -15,7 +15,7 @@
 ?>
     </li>
     <li class="nav-item">
-    <a href="profile.php"'>
+    <a href="profile.php">
     <span class="nav-link" >User Profile</span>
     <span class="line -right"></span>
     <span class="line -top"></span>

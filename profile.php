@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(!isset($_SESSION['login'])){
+if(!isset($_SESSION['logined'])){
   header('Location:' . $_SERVER['HTTP_REFERER']);
 }else{
  // include("dbtools.inc.php");
