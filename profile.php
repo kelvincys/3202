@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login'])){
-  //header('Location:' . $_SERVER['HTTP_REFERER']);
+  header('Location:' . $_SERVER['HTTP_REFERER']);
 }else{
  // include("dbtools.inc.php");
   //$link = create_connection();
