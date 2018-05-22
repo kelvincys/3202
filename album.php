@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/album.js"></script>
     <script src="js/basic.js"></script>
+    <script src="js/youtube.js"></script>
 
   </head>
 
@@ -177,6 +178,21 @@
             </div>
 
             
+
+
+      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen></iframe>
+            <div>
+              <select name="event" id="event">
+                <option value="proposal">Proposal</option>
+                <option value="wedding">Wedding Party</option>
+                <option value="birthday party">Birthday Party</option>
+              </select>
+              <button type="action" value="search" onclick="getSelectedPlace()">Change</button>
+            </div>
+
+
+    </div>
         </div>
     </div>
   
