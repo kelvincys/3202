@@ -19,9 +19,15 @@
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|IM+Fell+DW+Pica" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/service.js"></script>
     <script src="js/servicewindow.js"></script>
+    <script type="text/javascript">
+      function openbox(paypalid, productimg){
+            document.getElementById('testing').style.display='block';
+            document.getElementById('paypalid').value=paypalid;
+            document.getElementById("productimg").src = productimg;
+        }
+    </script>
   </head>
 
   <body>
