@@ -3,13 +3,41 @@
 	require_once('TCPDF/config/tcpdf_config.php');
 	session_start();
 	$username = $_SESSION["username"];
+	$serviceid = $_SESSION["serviceid"];
+	include("dbtools.inc.php");
+  	$link = create_connection();
+  	$sql = "SELECT service_name FROM service WHERE service_id = $serviceid";
+  	$result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+	while($row = mysqli_fetch_assoc($result)){
+	   $servicename = $row["service_name"];
+	}
 	// create new PDF document
-	$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+
+	class MYPDF extends TCPDF {
+
+    //Page header
+    public function Header() {
+        // Logo
+
+        $image_file = K_PATH_IMAGES.'icon.png';
+        $this->SetTextColor(255, 132, 156);
+        $this->Image($image_file, 10, 10, 34, 17, 'PNG', '', 'T', false, 300, '', false, false, 0, false, false, false);
+        // Set font
+        $this->SetFont('helvetica', 'B', 20);
+        // Title
+        $this->Cell(0, 15, ' Moment Event Purchase Reciept ', 0, false, 'C', 0, '', 0, false, 'M', 'M');
+    }
+
+  
+}
+
+
+	$pdf = new MYPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 
 	// set document information
 	$pdf->SetCreator(PDF_CREATOR);
-	$pdf->SetAuthor('Nicola Asuni');
-	$pdf->SetTitle('TCPDF Example 021');
+	$pdf->SetAuthor('Moment');
+	$pdf->SetTitle('Reciept');
 	$pdf->SetSubject('TCPDF Tutorial');
 	$pdf->SetKeywords('TCPDF, PDF, example, test, guide');
 
@@ -49,7 +77,7 @@
 	$pdf->AddPage();
 
 	// create some HTML content
-	$html = $username;
+	$html = 'Dear '.$username."<br>Thank Your for purchasing '".$servicename."'" ;
 
 	// output the HTML content
 	$pdf->writeHTML($html, true, 0, true, 0);
@@ -60,6 +88,6 @@
 	// ---------------------------------------------------------
 
 	//Close and output PDF document
-	$pdf->Output('example_021.pdf', 'I');
+	$pdf->Output('reciept.pdf', 'I');
 
 ?>

@@ -6,6 +6,7 @@
   if(isset($_GET["serviceid"])){
     $serviceid = $_GET["serviceid"];
   }
+  $_SESSION["serviceid"] = $serviceid;
   echo $serviceid;
     
   $sql = "INSERT INTO order_detail (user_id, service_id) 
@@ -47,7 +48,8 @@
   <body bgcolor="#FFFFFF">      
     <p align="center">Thank you for purchasing our service!<br>
       Your Plan：<font color="#FF0000"><?php  echo $servicename; ?></font><br>
-      You will be redirect to the home page in 5 second, if it doesn't please press <a href="index.php">here</a>
+      You can download your reciept <a href="pdfgen.php" target="_blank">here</a><br>
+      Click <a href="index.php">here</a> to return to the home page
     </p>
   </body>
 </html>
