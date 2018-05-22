@@ -81,6 +81,7 @@ input[type=button] {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    margin: 0px 25px;
 }
 
 .contactform{
