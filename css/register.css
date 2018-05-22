@@ -16,7 +16,7 @@ label {
 
 #registerform input[type=text], textarea, input[type=email], #registerform input[type=password] ,#registerform input[type=contact]{
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
+    padding: 12px; /* Some padding */ 
     border: 1px solid #ff849c; /* Pink border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -29,7 +29,7 @@ input, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type=submit], input[type=reset] {
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -51,7 +51,7 @@ h1, p{
   padding: 0px 100px 0px 100px;
 }
 
-input[type=button], input[type=reset] {
+input[type=button]{
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -67,4 +67,13 @@ h4{
 #registerform{
     padding: 100px 200px 0px 200px;
     position: absolute;
+}
+
+input[type=button], input[type=reset] {
+     color: #ff849c;
+    padding: 6px 10px;
+    border: solid #ff849c;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
 }

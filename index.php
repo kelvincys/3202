@@ -21,6 +21,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/basic.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   
 
   </head>
@@ -112,8 +114,8 @@
               <div class="container">
                 <input type="username" placeholder="Enter Username" name="username">
                 <input type="password" placeholder="Enter Password" name="password">        
-                <input type="button" value="Login" onClick="check_data()" class="logbutton">    
-                <a href="search_pwd.html" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
+                <input type="button" value="Login" onClick="check_data()" class="popbutton">    
+                <a href="search_pwd.html" style="text-decoration:none; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
             </form>
@@ -184,7 +186,6 @@
 
               <label for="enquiry">Your enquiry</label>
               <textarea id="enquiry" name="enquiry" placeholder="Write something..." style="height:200px" required></textarea>
-
               <input type="submit" value="Submit">
               
 
@@ -193,7 +194,6 @@
         </div>
 
 	</div>
-  
   </body>
 
 </html>

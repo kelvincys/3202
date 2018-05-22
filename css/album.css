@@ -30,11 +30,12 @@ body{
 .filter-button
 {
     font-size: 18px;
-    border: 1px solid #ff849c;
+    border: 1px #ff849c;
     border-radius: 5px;
     text-align: center;
     color: #ff849c;
     margin-bottom: 30px;
+    background: white;
 
 }
 .filter-button:hover
@@ -66,3 +67,4 @@ body{
     width: 365px;
     height: 365px;
 }
+

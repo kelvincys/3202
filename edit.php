@@ -154,7 +154,7 @@ if(!isset($_SESSION['login'])){
                     <input name="contact" type="contact" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
                   <input type="button" value="Update" onClick="check_info()">
-                  <input type="reset" value="Reset" class="logbutton">
+                  <input type="reset" value="Reset">
                 </form>
               </div>
             </div>
