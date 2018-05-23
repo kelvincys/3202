@@ -34,11 +34,10 @@
   <body>
 
    
-    <center>
-    <img src="assert/008.jpg" width=100%></img>
-    </center>
+    <div style="padding-top: 150px">
     <h1 style="text-align:center">Proposal</h1>
-    <div class="container-fluid">
+    </div>
+    <div class="container-fluid product">
         <div class="row">
             <?php
                 function findValue($productid){
