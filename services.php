@@ -28,6 +28,7 @@
             document.getElementById('productname').innerHTML =name;
             document.getElementById("productimg").src = productimg;
             document.getElementById('productdetail').innerHTML =detail;
+            document.getElementById('productprice').innerHTML = price;
 
         }
     </script>
@@ -139,7 +140,7 @@
     </div>
     
     <div id="content">
-
+    
     </div>
    
     <?php

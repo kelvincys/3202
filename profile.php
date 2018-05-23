@@ -2,12 +2,7 @@
 session_start();
 if(!isset($_SESSION['logined'])){
   header('Location:' . $_SERVER['HTTP_REFERER']);
-}else{
- // include("dbtools.inc.php");
-  //$link = create_connection();
 }
-  $_SESSION['userid'] ="5";
-  echo $_SESSION['userid'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -114,7 +109,7 @@ if(!isset($_SESSION['logined'])){
             <?php
             include("dbtools.inc.php");
             $link = create_connection();
-            $userid = $_SESSION['userid'];
+            $userid = $_SESSION['id'];
             $sql = "SELECT * FROM user INNER JOIN user_detail ON user.user_id = user_detail.user_id WHERE  user.user_id= '$userid'";
             $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
             echo "<table>"; // start a table tag in the HTML
@@ -130,15 +125,16 @@ if(!isset($_SESSION['logined'])){
             <div classs="profile0">
             <a href="edit.php"><button>Edit Profile</button></a>
             <a href="logout.php"><button>Logout</button></a>
+            <a href="delete.php"><button>Delete Your Account</button></a>
             </div>
           </div>
             <div class="col-lg-12">
               <?php
                 $sql = "SELECT * FROM order_detail INNER JOIN service ON order_detail.service_id = service.service_id WHERE  order_detail.user_id= '$userid'";
                 $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-                echo "<table><tr><th>Order ID</th><th>Service Name</th></tr>";
+                echo "<table  class='order'><tr class='order'><th class='order'>Order ID</th><th>Service Name</th></tr>";
                 while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
-                echo "<tr><td>" . $row["order_id"]. "</td><td>"  .$row["service_name"]. "</td></tr>";
+                echo "<tr class= 'order'><td class='order'>" . $row["order_id"]. "</td><td>"  .$row["service_name"]. "</td></tr>";
               }
               echo "</table>"
               ?>

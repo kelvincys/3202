@@ -19,6 +19,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function openbox(paypalid, productimg, name ,price,detail){
+            document.getElementById('testing').style.display='block';
+            document.getElementById('paypalid').value=paypalid;
+            document.getElementById('productname').innerHTML =name;
+            document.getElementById("productimg").src = productimg;
+            document.getElementById('productdetail').innerHTML =detail;
+
+        }
+    </script>
   </head>
 
   <body>
@@ -27,7 +37,7 @@
     <center>
     <img src="assert/008.jpg" width=100%></img>
     </center>
-    <h1>Proposal</h1>
+    <h1 style="text-align:center">Proposal</h1>
     <div class="container-fluid">
         <div class="row">
             <?php
@@ -58,8 +68,6 @@
             
         </div>
     </div>
-        <button  class="logbutton" onclick="openbox('UXBNHAXQSXH2A','assert/007.jpg')">
-              <img src="assert/007.jpg" width="365"></button>
           <div id="testing" class="modal">
           
                     <div class="login animate">
@@ -68,7 +76,8 @@
                         <span onclick="document.getElementById('testing').style.display='none'" class="close" title="Close PopUp">&times;</span>
                         <img alt="product1" width="365" id="productimg">
                         <h2 style="text-align:center" id="productname"></h2>
-                        <h4 id="productdetail"></h4>
+                        <p id="productdetail" class="detail"></p>
+                        Price: <p style="display:inline" id="productprice" name="productprice"></p>
                         
                       </div>
 
@@ -87,8 +96,6 @@
                     </div>
 
             </div>
-
-<!-- document.getElementById('testing').style.display='block'-->
    
   </body>
 

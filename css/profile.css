@@ -20,3 +20,7 @@
     cursor: pointer;
     font-weight: bold;
 }
+
+.order {
+    border: 1px solid black;
+}

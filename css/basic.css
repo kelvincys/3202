@@ -152,7 +152,7 @@ input[type=username], input[type=password] {
 /* Center the image and position the close button */
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 24px 0px 12px 0px;
     position: relative;
 }
 /* The Modal (background) */
