@@ -13,20 +13,14 @@ body{
 }
 .gallery-title
 {
-    font-size: 36px;
+    font-size: 50px;
     color: #ff849c;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.gallery-title:after {
-    content: "";
-    position: absolute;
-    width: 7.5%;
-    left: 46.5%;
-    height: 45px;
-    border-bottom: 1px solid #ff849c;
-}
+
 .filter-button
 {
     font-size: 18px;
