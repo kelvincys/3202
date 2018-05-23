@@ -25,6 +25,11 @@
       function openbox(paypalid, productimg){
             document.getElementById('testing').style.display='block';
             document.getElementById('paypalid').value=paypalid;
+
+
+            productimg = productimg.replace(/["']/g, "");
+
+
             document.getElementById("productimg").src = productimg;
         }
     </script>

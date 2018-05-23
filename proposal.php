@@ -19,38 +19,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-     <script>
-        
-        
-        // // Get the modal
-        // var modal = document.getElementById('myModal');
-
-        // // Get the button that opens the modal
-        // var btn = document.getElementById("myBtn");
-
-        // // Get the <span> element that closes the modal
-        // var span = document.getElementsByClassName("close")[0];
-
-        // // When the user clicks on the button, open the modal
-        // btn.onclick = function() {
-        //     modal.style.display = "block";
-        // };
-
-        // // When the user clicks on <span> (x), close the modal
-        // span.onclick = function() {
-        //     modal.style.display = "none";
-        // };
-
-        // // When the user clicks anywhere outside of the modal, close it
-        // window.onclick = function(event) {
-        //     if (event.target == modal) {
-        //         modal.style.display = "none";
-        //     }
-        // };
-
-        
-    </script>
   </head>
 
   <body>
@@ -63,22 +31,31 @@
     <div class="container-fluid">
         <div class="row">
             <?php
-                include("dbtools.inc.php");
-                $link = create_connection();
-                $sql = "SELECT * FROM service WHERE product_type = '1'";
-                $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-                while($row = mysqli_fetch_assoc($result)) {
+                $assertid = null;
+                $paypalid = null;
+                function findValue($productid){
+                    global $assertid, $paypalid;
+                    include_once("dbtools.inc.php");
+                    $link = create_connection();
+                    $sql = "SELECT * FROM service WHERE service_id = $productid";
+                    $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+                    $row = mysqli_fetch_assoc($result);
                     $name = $row['service_name'];
                     $price = $row['price'];
                     $detail = $row['product_detail'];
                     $paypalid = $row['paypalid'];
-                    $tmpassert = $row['assertid'];
-                    $assertid = str_replace("assert/", "", $tmpassert);
-                    echo "<div class='col-lg-4'>";
-                    echo '<button  class="logbutton probutton" data-assertid='.$assertid.' data-paypalid='.$paypalid.' > <img src="assert/'.$assertid.'" width="100%"></button>';
-                    echo"</div>";
+                    $assertid = $row['assertid'];
+                    echo $paypalid;
+                    echo $assertid;
                 }
-            ?>
+            ?>    
+                    <div class='col-lg-4'>
+                        <?php findValue("1"); 
+                        echo $paypalid;?>
+                        <button  class="logbutton" onclick="openbox(<?php echo $paypalid; ?> , <?php echo "'".$assertid."'"; ?> )" > <img src= <?php echo '"'.$assertid.'"'; ?> width="100%"></button>
+                    </div>
+                
+            
         </div>
     </div>
         <button  class="logbutton" onclick="openbox('UXBNHAXQSXH2A','assert/007.jpg')">
@@ -109,14 +86,7 @@
                     </div>
 
             </div>
-            <script type="text/javascript">
-                $('.probutton').onclick(function(){
-                    var button = $(this);
-                    var assertid = button.data.attr("assertid");
-                    var paypalid = button.data.attr("paypalid");
-                    console.log("1");
-                });
-            </script>
+
 <!-- document.getElementById('testing').style.display='block'-->
    
   </body>
