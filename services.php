@@ -22,15 +22,13 @@
     <script src="js/service.js"></script>
     <script src="js/servicewindow.js"></script>
     <script type="text/javascript">
-      function openbox(paypalid, productimg){
+      function openbox(paypalid, productimg, name ,price,detail){
             document.getElementById('testing').style.display='block';
             document.getElementById('paypalid').value=paypalid;
-
-
-            productimg = productimg.replace(/["']/g, "");
-
-
+            document.getElementById('productname').innerHTML =name;
             document.getElementById("productimg").src = productimg;
+            document.getElementById('productdetail').innerHTML =detail;
+
         }
     </script>
   </head>

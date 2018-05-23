@@ -31,10 +31,8 @@
     <div class="container-fluid">
         <div class="row">
             <?php
-                $assertid = null;
-                $paypalid = null;
                 function findValue($productid){
-                    global $assertid, $paypalid;
+                    global $assertid, $paypalid, $name, $price, $detail;
                     include_once("dbtools.inc.php");
                     $link = create_connection();
                     $sql = "SELECT * FROM service WHERE service_id = $productid";
@@ -45,14 +43,16 @@
                     $detail = $row['product_detail'];
                     $paypalid = $row['paypalid'];
                     $assertid = $row['assertid'];
-                    echo $paypalid;
-                    echo $assertid;
+
                 }
             ?>    
-                    <div class='col-lg-4'>
-                        <?php findValue("1"); 
-                        echo $paypalid;?>
-                        <button  class="logbutton" onclick="openbox(<?php echo $paypalid; ?> , <?php echo "'".$assertid."'"; ?> )" > <img src= <?php echo '"'.$assertid.'"'; ?> width="100%"></button>
+                    <div class='col-lg-6'>
+                        <?php findValue("1"); ?>
+                        <button  class="logbutton" onclick="openbox(<?php echo $paypalid; ?> , <?php echo "'".$assertid."'"; ?> ,<?php echo "'".$name."'"; ?> ,<?php echo "'".$price."'"; ?>,<?php echo "'".$detail."'"; ?>)" > <img src= <?php echo '"'.$assertid.'"'; ?> width="100%"><?php echo $name; ?></button>
+                    </div>
+                    <div class='col-lg-6'>
+                        <?php findValue("2"); ?>
+                        <button  class="logbutton" onclick="openbox(<?php echo $paypalid; ?> , <?php echo "'".$assertid."'"; ?> ,<?php echo "'".$name."'"; ?> ,<?php echo "'".$price."'"; ?>,<?php echo "'".$detail."'"; ?>)" > <img src= <?php echo '"'.$assertid.'"'; ?> width="100%"><?php echo $name; ?></button>
                     </div>
                 
             
@@ -67,7 +67,8 @@
                       <div class="imgcontainer">
                         <span onclick="document.getElementById('testing').style.display='none'" class="close" title="Close PopUp">&times;</span>
                         <img alt="product1" width="365" id="productimg">
-                        <h2 style="text-align:center">This is Proposal 1</h2>
+                        <h2 style="text-align:center" id="productname"></h2>
+                        <h4 id="productdetail"></h4>
                         
                       </div>
 
