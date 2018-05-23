@@ -34,9 +34,7 @@
   <body>
 
    
-    <div style="padding-top: 150px">
     <h1>Proposal</h1>
-    </div>
     <div class="container-fluid product">
         <div class="row">
             <?php
