@@ -5,16 +5,14 @@ body, html {
     color: #ffb7c5;
 }
 
-#register{
-  padding: 120px;
-}
+
 
 label {
     font-weight: bold;
 }
 
 
-#registerform input[type=text], textarea, input[type=email], #registerform input[type=password] ,#registerform input[type=contact]{
+#registerform input[type=text], textarea, input[type=email], #registerform input[type=password] ,#registerform input[type=contact],input[type=tel]{
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ff849c; /* Pink border */
@@ -29,7 +27,7 @@ input, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit], input[type=reset] {
+input[type=button], input[type=reset] {
     color: #ff849c;
     padding: 6px 10px;
     border: solid #ff849c;
@@ -39,7 +37,7 @@ input[type=submit], input[type=reset] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type=button]:hover , input[type=reset]:hover{
     border-style: solid;
     background-color: rgba(255, 255, 255, 0.7);
     transform: translateY(4px);
@@ -51,14 +49,6 @@ h1, p{
   padding: 0px 100px 0px 100px;
 }
 
-input[type=button]{
-    color: #ff849c;
-    padding: 6px 10px;
-    border: solid #ff849c;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
 
 h4{
     text-align: center;
