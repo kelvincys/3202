@@ -126,15 +126,17 @@
           
     <div class="container-fluid halfdown">
       <div class="row">
-        <div class="col-lg-4" style="text-align: center">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-2" style="text-align: center">
           <a onclick="loadproposal()">Sercet Proposal</a>
         </div>
-        <div class="col-lg-4" style="text-align: center">
+        <div class="col-lg-2" style="text-align: center">
           <a onclick="loadbirthday()">Birthday Party</a>
         </div>
-        <div class="col-lg-4" style="text-align: center">
+        <div class="col-lg-2" style="text-align: center">
           <a onclick="loadwedding()">Wedding Party</a>
         </div>
+        <div class="col-lg-3"></div>
       </div>
     </div>
     
