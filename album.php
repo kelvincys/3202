@@ -177,10 +177,10 @@
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive">
             </div>
 
-            
+            </div>
 
 
-      <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen></iframe>
             <div>
               <select name="event" id="event">
