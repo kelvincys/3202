@@ -20,6 +20,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/basic.js"></script>
+    <script src="js/googlemap.js"></script>
 
   </head>
 
@@ -126,6 +127,10 @@
         2. Creative<br>
         3. Passionate
     </div>
+    <div id="map"></div>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVBBI2_Yhss8H1Wg48VRMzC4f11CgCCU&callback=initMap">
+    </script>
   </body>
 
 </html>

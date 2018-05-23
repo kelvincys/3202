@@ -1,5 +1,4 @@
 body {
-    height: 100%;
     background-color: transparent;
     position: relative;
     color: black;
@@ -24,3 +23,8 @@ body {
 h1 {
   font-size: 80px;
 }
+
+#map {
+        height: 50px;
+        width: 50px;
+      }
