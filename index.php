@@ -115,7 +115,6 @@
                 <input type="username" placeholder="Enter Username" name="username">
                 <input type="password" placeholder="Enter Password" name="password">        
                 <input type="button" value="Login" onClick="check_data()" class="popbutton">    
-                <a href="search_pwd.html" style="text-decoration:none; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
             </form>

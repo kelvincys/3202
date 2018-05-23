@@ -130,7 +130,7 @@ a:active {
 input[type=username], input[type=password] {
     width: 90%;
     padding: 12px 20px;
-    margin: 8px 26px;
+
     display: inline-block;
     border: 1px solid #ff849c;
     box-sizing: border-box;

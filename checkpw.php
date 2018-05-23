@@ -21,14 +21,14 @@
   $stmt->close();
   //Compare the result
   if(password_verify($_POST["password"],$password)){
-    //設定登入者的名稱及等級
+
     $_SESSION["id"]=$userid;
     $_SESSION["username"]=$username;
     $_SESSION["logined"]="1";
 
     echo $_SESSION["id"];
     echo $_SESSION["logined"];
-    //若帳號等級為 member 則導向會員中心
+
     header('Location:' . $_SERVER['HTTP_REFERER']);
   } else {
     echo "fail";

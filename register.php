@@ -109,7 +109,6 @@
                 <input type="username" placeholder="Enter Username" name="username">
                 <input type="password" placeholder="Enter Password" name="password">        
                 <input type="button" value="Login" onClick="check_data()" class="logbutton">    
-                <a href="search_pwd.html" style="text-decoration:none; float:left; margin-bottom:26px; margin-left:26px;color:#ff849c">Forgot Password ?</a>
               </div>
               
             </form>
@@ -161,7 +160,7 @@
                     <input type="tel" id="number" name="cnumber" placeholder="Your phone number" required pattern="[0-9]{10}">
                   </div>
                   <input type="button" value="Register" id="register" onClick="check_info()" disabled>
-                  <input type="reset" value="Reset" class="logbutton">
+                  <input type="reset" value="Reset">
                 </form>
               </div>
             </div>

@@ -18,7 +18,7 @@
 	}
 	$subject = "Thank you for contact us";
 	$message = "Dear ".$name. "\n Thank you for contacting us. \n We will reply you soon \n If you did not recieve an email from us in the next week, please send an email to enquiry@moment.com \n\n Moment 2018\nTel:02-1234-1234\nEmail:enquiry@moment.com";
-	$headers = "From: kelvinchungkw@gmail.com";
+	$headers = "From: moment3202@gmail.com";
 	mail($to,$subject,$message,$headers);
 	header('Location: ' . $_SERVER['HTTP_REFERER']);
 	exit;
