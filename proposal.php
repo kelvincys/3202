@@ -35,7 +35,7 @@
 
    
     <div style="padding-top: 150px">
-    <h1 style="text-align:center">Proposal</h1>
+    <h1>Proposal</h1>
     </div>
     <div class="container-fluid product">
         <div class="row">

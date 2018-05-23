@@ -35,9 +35,8 @@
 
    
     <center>
-    <img src="assert/008.jpg" width=100%></img>
     </center>
-    <h1 style="text-align:center">Wedding Party</h1>
+    <h1>Wedding Party</h1>
     <div class="container-fluid">
         <div class="row">
             <?php
