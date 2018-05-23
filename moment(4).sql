@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2018 at 06:47 AM
+-- Generation Time: May 23, 2018 at 10:01 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -95,17 +95,20 @@ CREATE TABLE `service` (
   `price` int(6) NOT NULL,
   `product_detail` varchar(500) COLLATE utf8_unicode_ci NOT NULL,
   `paypalid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `assertid` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `product_type` int(1) NOT NULL
+  `assertid` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `service`
 --
 
-INSERT INTO `service` (`service_id`, `service_name`, `price`, `product_detail`, `paypalid`, `assertid`, `product_type`) VALUES
-(1, 'The Cinema Proposal', 200, 'Date her for a movie night, during the movie we will change the movie to a memory video to give you a chance to propose.', '\'UXBNHAXQSXH2A\'', 'assert/007.jpg', 1),
-(2, 'The River Proposal', 250, 'Having a great dinner on a dinner cruises, listen to live band. We will create a good timing for you to propose. (Only available on Thursday, Friday and Saturday)', '\'9XCFLTYASG7ZN\'', 'assert/006.jpg', 1);
+INSERT INTO `service` (`service_id`, `service_name`, `price`, `product_detail`, `paypalid`, `assertid`) VALUES
+(1, 'The Cinema Proposal', 200, 'Date her for a movie night, during the movie we will change the movie to a memory video to give you a chance to propose.', '\'UXBNHAXQSXH2A\'', 'assert/p01.jpg'),
+(2, 'The River Proposal', 250, 'Having a great dinner on a dinner cruises, listen to live band. We will create a good timing for you to propose. (Only available on Thursday, Friday and Saturday)', '\'9XCFLTYASG7ZN\'', 'assert/p02.jpg'),
+(3, 'Rooftop party ', 500, 'Having a birthday party on the rooftop bar in Southbank. This venue only provide cocktail party.', '\'8WAX9YL8PU7NE\'', 'assert/p03.jpg'),
+(4, 'Cat cafe Party', 200, 'For the cat lovers, having a birthday party around by lots of cat is the best birthday gift ever.  This venue only provides light meal and coffee.', '\'HTJC9A4KTHJUU\'', 'assert/p04.jpg'),
+(5, 'Skytower Wedding Party', 4000, 'Holding a wedding party on the 40th floor of the Brisbane Skytower. The venue provides a varied choice of food, from fine dining to cocktail party, you can choose a plan according to your budget.', '\'747GT3RZEPLYQ\'', 'assert/p05.jpg'),
+(6, 'Beach Wedding Party', 2000, 'Imagine having a wedding party at the gold coast main beach with the endless view. This venue only provide cocktail party.', '\'L9VD8L4XAEDWJ\'', 'assert/p06.jpg');
 
 -- --------------------------------------------------------
 
@@ -209,13 +212,13 @@ ALTER TABLE `order_detail`
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `service_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `user_id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- Constraints for dumped tables
