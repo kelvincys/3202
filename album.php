@@ -185,17 +185,8 @@
                 <img src="http://fakeimg.pl/365x365/" class="img-responsive" id="aimg12" onclick="photoclick(this)">
             </div>
 
-            </div>
-            <!-- The Modal -->
-            <div id="imglarge" class="imglarge">
+            
 
-              <!-- The Close Button -->
-              <span class="close" onclick="spanclose()">&times;</span>
-
-              <!-- Modal Content (The Image) -->
-              <img class="imgcontent" id="img01">
-
-            </div>
 
       <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen></iframe>
@@ -208,11 +199,20 @@
               <button type="action" value="search" onclick="getSelectedPlace()">Change</button>
             </div>
 
-
-    </div>
+            </div>
+          </div>
         </div>
     </div>
-  
+                <!-- The Modal -->
+            <div id="imglarge" class="imglarge">
+
+              <!-- The Close Button -->
+              <span class="close" onclick="spanclose()">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="imgcontent" id="img01">
+
+            </div>
   </body>
 
 </html>
