@@ -77,7 +77,7 @@
 	$pdf->AddPage();
 
 	// create some HTML content
-	$html = 'Dear '.$username."<br>Thank Your for purchasing '".$servicename."'" ;
+	$html = 'Dear '.$username."<br>Thank Your for purchasing '".$servicename."' <br>Our staff will contact you soon. <br>If you have any enquiries you can contact: moment3202@gmail.com <br>Contact Number: 0412228055<br>Location: 855 Stanley Street, Woolloongabba, QLD 4102" ;
 
 	// output the HTML content
 	$pdf->writeHTML($html, true, 0, true, 0);

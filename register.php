@@ -157,7 +157,7 @@
 
                   <div class="mb-3">
                     <label for="contact">Phone Number <span class="text-muted"></span></label>
-                    <input type="tel" id="number" name="cnumber" placeholder="Your phone number" required pattern="[0-9]{10}">
+                    <input type="tel" id="number" name="contact" placeholder="Your phone number" required pattern="[0-9]{10}">
                   </div>
                   <input type="button" value="Register" id="register" onClick="check_info()" disabled>
                   <input type="reset" value="Reset">
