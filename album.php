@@ -22,7 +22,16 @@
     <script src="js/album.js"></script>
     <script src="js/basic.js"></script>
     <script src="js/youtube.js"></script>
+    <script type="text/javascript">
+      function photoclick(imgtarget) {
+          imglarge.style.display = "block";
+          document.getElementById("img01").src = imgtarget.src;
+      }
 
+      function spanclose() {
+            imglarge.style.display = "none";
+      } 
+    </script>
   </head>
 
   <body>
@@ -131,53 +140,62 @@
 
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="assert/propose1.jpg" class="img-responsive resize">
+                <img src="assert/propose1.jpg" class="img-responsive resize" id="aimg1" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/album1.png" class="img-responsive resize">
+                <img src="assert/album1.png" class="img-responsive resize" id="aimg2" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday1.png" class="img-responsive resize">
+                <img src="assert/birthday1.png" class="img-responsive resize" id="aimg3" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg4" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding2.jpg" class="img-responsive resize">
+                <img src="assert/wedding2.jpg" class="img-responsive resize" id="aimg5" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday2.png" class="img-responsive resize">
+                <img src="assert/birthday2.png" class="img-responsive resize" id="aimg6" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg7" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding3.png" class="img-responsive resize">
+                <img src="assert/wedding3.png" class="img-responsive resize" id="aimg8" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday3.png" class="img-responsive resize">
+                <img src="assert/birthday3.png" class="img-responsive resize" id="aimg9" onclick="photoclick(this)">
 
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg10" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding4.jpg" class="img-responsive resize">
+                <img src="assert/wedding4.jpg" class="img-responsive resize" id="aimg11" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive" id="aimg12" onclick="photoclick(this)">
             </div>
 
             </div>
+            <!-- The Modal -->
+            <div id="imglarge" class="imglarge">
 
+              <!-- The Close Button -->
+              <span class="close" onclick="spanclose()">&times;</span>
+
+              <!-- Modal Content (The Image) -->
+              <img class="imgcontent" id="img01">
+
+            </div>
 
       <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen></iframe>
