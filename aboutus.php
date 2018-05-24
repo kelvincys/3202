@@ -129,7 +129,7 @@
     <h2>We Have Held Events In These Venues</h2>
     <div id="map" class="container" style=""></div>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVBBI2_Yhss8H1Wg48VRMzC4f11CgCCU&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZvpVhY-jrNdUedMbUj0CD-5_JBtfOAdM&callback=initMap">
     </script>
   </body>
 
