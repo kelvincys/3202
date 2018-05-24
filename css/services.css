@@ -1,9 +1,9 @@
 .halfdown{
     padding-top: 110px;
-    position: fixed
+
 }
 
-button{
+.serbutton{
 	width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ff849c; /* Pink border */
