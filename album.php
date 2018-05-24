@@ -40,7 +40,7 @@
       <div class="container">
       <div class="effect"></div>
        <a class="navbar-brand" href="index.php">
-          <img src="assert/icon.png"  alt="logo">
+          <img src="/assert/icon.png"  alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -106,7 +106,7 @@
                   
               <div class="imgcontainer">
                 <span onclick="document.getElementById('poplog').style.display='none'" class="close" title="Close PopUp">&times;</span>
-                <img src="assert/icon.png" alt="Avatar" class="avatar">
+                <img src="/assert/icon.png" alt="Avatar" class="avatar">
                 <h2 style="text-align:center">Log In</h2>
                 <p>New to MOMENT? <a href="register.php" style="font-weight: bold; color:#ff849c">Sign Up</a></p>
               </div>
@@ -140,49 +140,49 @@
 
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="assert/propose1.jpg" class="img-responsive resize" id="aimg1" onclick="photoclick(this)">
+                <img src="/assert/propose1.jpg" class="img-responsive resize" id="aimg1" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/album1.png" class="img-responsive resize" id="aimg2" onclick="photoclick(this)">
+                <img src="/assert/album1.png" class="img-responsive resize" id="aimg2" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday1.png" class="img-responsive resize" id="aimg3" onclick="photoclick(this)">
+                <img src="/assert/birthday1.png" class="img-responsive resize" id="aimg3" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="assert/propose2.jpg" class="img-responsive resize" id="aimg4" onclick="photoclick(this)">
+                <img src="/assert/propose2.jpg" class="img-responsive resize" id="aimg4" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding2.jpg" class="img-responsive resize" id="aimg5" onclick="photoclick(this)">
+                <img src="/assert/wedding2.jpg" class="img-responsive resize" id="aimg5" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday2.png" class="img-responsive resize" id="aimg6" onclick="photoclick(this)">
+                <img src="/assert/birthday2.png" class="img-responsive resize" id="aimg6" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="assert/propose3.jpg" class="img-responsive resize" id="aimg7" onclick="photoclick(this)">
+                <img src="/assert/propose3.jpg" class="img-responsive resize" id="aimg7" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding3.png" class="img-responsive resize" id="aimg8" onclick="photoclick(this)">
+                <img src="/assert/wedding3.png" class="img-responsive resize" id="aimg8" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday3.png" class="img-responsive resize" id="aimg9" onclick="photoclick(this)">
+                <img src="/assert/birthday3.png" class="img-responsive resize" id="aimg9" onclick="photoclick(this)">
 
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="assert/propose4.jpg" class="img-responsive resize" id="aimg10" onclick="photoclick(this)">
+                <img src="/assert/propose4.jpg" class="img-responsive resize" id="aimg10" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
-                <img src="assert/wedding4.jpg" class="img-responsive resize" id="aimg11" onclick="photoclick(this)">
+                <img src="/assert/wedding4.jpg" class="img-responsive resize" id="aimg11" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="assert/birthday4.jpg" class="img-responsive resize" id="aimg12" onclick="photoclick(this)">
+                <img src="/assert/birthday4.jpg" class="img-responsive resize" id="aimg12" onclick="photoclick(this)">
             </div>
 
             

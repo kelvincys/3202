@@ -104,7 +104,7 @@ if(!isset($_SESSION['logined'])){
       <div class="container-fluid" id="content">
         <div class="row">
           <div class="col-lg-4" id="userpicture">
-            <img src="http://d2h2vnfmmg5sct.cloudfront.net/catalog/product/large_image/00_400325.jpg" class="userphoto" height="100%">
+            <img src="assert/profile.jpg" class="userphoto" height="100%">
           </div>
           <div class="col-lg-8">
             <?php
