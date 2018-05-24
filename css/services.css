@@ -10,8 +10,7 @@
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-bottom: 8px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    position: fixed;
-    z-index:9999;
+
 }
 
 #content{
