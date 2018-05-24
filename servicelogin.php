@@ -3,7 +3,7 @@
     if(!isset($_SESSION['logined'])){
     
 ?>
-    Please login in order to purchase our service
+    Please login in order to purchase our service <input type="hidden" name="hosted_button_id" id="paypalid">
 	
 <?php
         if(!isset($_SESSION)) 
