@@ -199,7 +199,7 @@
 
     <form action="" method="post">
         <input type='text' name='address' placeholder='Enter event venue here to see the map' />
-        <input type='submit' value='Geocode!' />
+        <input type='submit' value='Go!' />
     </form>
     </body>
     <?php
