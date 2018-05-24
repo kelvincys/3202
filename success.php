@@ -48,6 +48,7 @@
     <p align="center">Thank you for purchasing our service!<br>
       Your Plan：<font color="#FF0000"><?php  echo $servicename; ?></font><br>
       You can download your reciept <a href="pdfgen.php" target="_blank">here</a><br>
+      You can mark down your event in your google calendar here<a href="google-login.php">here</a><br>
       Click <a href="index.php">here</a> to return to the home page
     </p>
   </body>
