@@ -19,16 +19,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        function openbox(paypalid, productimg, name ,price,detail){
-            document.getElementById('testing').style.display='block';
-            document.getElementById('paypalid').value=paypalid;
-            document.getElementById('productname').innerHTML =name;
-            document.getElementById("productimg").src = productimg;
-            document.getElementById('productdetail').innerHTML =detail;
-
-        }
-    </script>
   </head>
 
   <body>
@@ -82,14 +72,7 @@
                       </div>
 
                       <div class="container">
-                        <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" id="paypalid">
-                            <input type="image" src="https://www.sandbox.paypal.com/en_AU/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                            <img alt="" border="0" src="https://www.sandbox.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-                        </form>
-
-
+                        <?php include 'servicelogin.php'; ?>
 
                       </div>
                       
