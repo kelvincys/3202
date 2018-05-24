@@ -30,22 +30,7 @@ if(isset($_GET['code'])) {
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<style type="text/css">
-
-#logo {
-	text-align: center;
-	width: 200px;
-    display: block;
-    margin: 100px auto;
-    border: 2px solid #2980b9;
-    padding: 10px;
-    background: none;
-    color: #2980b9;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-</style>
+<link href="css/addevent.css" rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +41,7 @@ $login_url = 'https://accounts.google.com/o/oauth2/auth?scope=' . urlencode('htt
 
 ?>
 
-<a id="logo" href="<?= $login_url ?>">Login with Google</a>
+<a href="<?= $login_url ?>"><img src="assert/google.png"></img></a>
 
 </body>
 </html>
