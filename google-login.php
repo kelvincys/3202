@@ -16,7 +16,7 @@ if(isset($_GET['code'])) {
 		$_SESSION['access_token'] = $data['access_token'];
 
 		// Redirect to the page where user can create event
-		header('Location: home.php');
+		header('Location: addevent.php');
 		exit();
 	}
 	catch(Exception $e) {
