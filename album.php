@@ -151,7 +151,7 @@
                 <img src="assert/birthday1.png" class="img-responsive resize" id="aimg3" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg4" onclick="photoclick(this)">
+                <img src="assert/propose2.jpg" class="img-responsive resize" id="aimg4" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
@@ -162,7 +162,7 @@
                 <img src="assert/birthday2.png" class="img-responsive resize" id="aimg6" onclick="photoclick(this)">
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg7" onclick="photoclick(this)">
+                <img src="assert/propose3.jpg" class="img-responsive resize" id="aimg7" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
@@ -174,7 +174,7 @@
 
             </div>
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter proposal">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive resize" id="aimg10" onclick="photoclick(this)">
+                <img src="assert/propose4.jpg" class="img-responsive resize" id="aimg10" onclick="photoclick(this)">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter wedding">
@@ -182,7 +182,7 @@
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
-                <img src="http://fakeimg.pl/365x365/" class="img-responsive" id="aimg12" onclick="photoclick(this)">
+                <img src="assert/birthday4.jpg" class="img-responsive resize" id="aimg12" onclick="photoclick(this)">
             </div>
 
             
