@@ -129,13 +129,13 @@
       <div class="row">
         <div class="col-lg-3"></div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadproposal()"><button>Sercet Proposal</button></a>
+          <a onclick="loadproposal()"><button class="serbutton">Sercet Proposal</button></a>
         </div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadbirthday()"><button>Birthday Party</button></a>
+          <a onclick="loadbirthday()"><button class="serbutton">Birthday Party</button></a>
         </div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadwedding()"><button>Wedding Party</button></a>
+          <a onclick="loadwedding()"><button class="serbutton">Wedding Party</button></a>
         </div>
         <div class="col-lg-3"></div>
       </div>

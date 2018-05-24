@@ -7,7 +7,6 @@
     $serviceid = $_GET["serviceid"];
   }
   $_SESSION["serviceid"] = $serviceid;
-  echo $serviceid;
     
   $sql = "INSERT INTO order_detail (user_id, service_id) 
             VALUES ('$userid', '$serviceid')";
