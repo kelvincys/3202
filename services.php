@@ -129,13 +129,13 @@
       <div class="row service">
         <div class="col-lg-3"></div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadproposal()">Sercet Proposal</a>
+          <a onclick="loadproposal()"><button>Sercet Proposal</button></a>
         </div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadbirthday()">Birthday Party</a>
+          <a onclick="loadbirthday()"><button>Birthday Party</button></a>
         </div>
         <div class="col-lg-2" style="text-align: center">
-          <a onclick="loadwedding()">Wedding Party</a>
+          <a onclick="loadwedding()"><button>Wedding Party</button></a>
         </div>
         <div class="col-lg-3"></div>
       </div>

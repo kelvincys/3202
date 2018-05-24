@@ -1,16 +1,18 @@
 .halfdown{
-    padding-top: 120px;
+    padding-top: 100px;
     position: fixed
 }
-.down{
-    padding-top: 200px;
+
+button{
+	width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ff849c; /* Pink border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-bottom: 8px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-.margindown{
-    margin-top: 200px;
+#content{
+	padding-top: 110px;
 }
-
-.size{
-    height: 1000px
-}
-
