@@ -31,7 +31,7 @@
 
     header('Location:' . $_SERVER['HTTP_REFERER']);
   } else {
-    echo "fail";
+    echo "Your Username or Password is wrong please click <a href='index.php'>here</a> to login again";
   }
 }
 ?>
