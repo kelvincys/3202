@@ -30,6 +30,7 @@ if(!isset($_SESSION['access_token'])) {
 	<input type="text" id="event-end-time" placeholder="Event End Time" autocomplete="off" />
 	<input type="text" id="event-date" placeholder="Event Date" autocomplete="off" />
 	<button id="create-event">Create Event</button>
+	<a href="index.php"><button>Back to home</button></a>
 </div>
 <script>
 function AdjustMinTime(ct) {

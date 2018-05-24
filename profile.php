@@ -131,7 +131,7 @@ if(!isset($_SESSION['logined'])){
           </div>
             <div class="col-lg-12">
               <?php
-                $sql = "SELECT * FROM order_detail INNER JOIN service ON order_detail.service_id = service.service_id WHERE  order_detail.user_id= '$userid'";
+                $sql = "SELECT * FROM order_detail INNER JOIN service ON order_detail.service_id = service.service_id  WHERE  order_detail.user_id= '$userid' ORDER BY order_id";
                 $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
                 echo "<table  class='order'><tr class='order'><th class='order'>Order ID</th><th>Service Name</th></tr>";
                 while($row = mysqli_fetch_assoc($result)){   //Creates a loop to loop through results
