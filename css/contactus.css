@@ -3,6 +3,7 @@ body, html {
     background-color: transparent;
     position: relative;
     color: #ff849c;
+
 }
 
 #contact{
@@ -57,3 +58,8 @@ input[type=button] {
     font-weight: bold;
 }
 
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url("../assert/011.jpg");
+    background-size: 100% 110%;
+    margin: 10px;
+}

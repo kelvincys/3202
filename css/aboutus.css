@@ -3,10 +3,11 @@ body {
     position: relative;
     color: black;
     padding-top:120px;
-    background-image: url("../assert/1234.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255,255,255,0.5)), url("../assert/003.jpg");
     background-color: rgb(255, 255, 255, 0.5);
     background-repeat:no-repeat;
     background-size:cover;
+    color: #ff849c;
 }
 
 .word {
@@ -16,12 +17,12 @@ body {
   margin-right: auto;
   padding-top:20px;
   padding: 10px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-family: 'Imprima', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-size: 28px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 #map {
@@ -33,4 +34,8 @@ h1 {
 
 h2 {
   text-align: center;
+}
+
+h3 {
+  font-size: 36px;
 }

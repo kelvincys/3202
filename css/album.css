@@ -19,6 +19,9 @@ body{
     font-weight: 500;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
 }
 
 .filter-button 
@@ -30,6 +33,9 @@ body{
     color: #ff849c;
     margin-bottom: 30px;
     background: white;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
 
 }
 .filter-button:hover
@@ -40,6 +46,9 @@ body{
     text-align: center;
     color: white;
     background-color: #ff849c;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
 
 }
 .btn-default:active .filter-button:active
@@ -122,3 +131,4 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
+

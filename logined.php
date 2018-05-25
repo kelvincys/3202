@@ -3,7 +3,7 @@
     if(!isset($_SESSION['logined'])){
     
 ?>
-    <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" >
+    <button onclick="document.getElementById('poplog').style.display='block'" class="logbutton" style="  font-family: 'IM Fell DW Pica', serif; font-family: 'Do Hyeon', sans-serif;">
               Login/Sign Up</button>
 	
 <?php
