@@ -10,6 +10,8 @@
   	$result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
 	while($row = mysqli_fetch_assoc($result)){
 	   $servicename = $row["service_name"];
+	   $price = $row["price"];
+
 	}
 	// create new PDF document
 
@@ -75,9 +77,9 @@
 
 	// add a page
 	$pdf->AddPage();
-
+	$pdf->Image('assert/icon.jpg',0,0);
 	// create some HTML content
-	$html = 'Dear '.$username."<br>Thank Your for purchasing '".$servicename."' <br>Our staff will contact you soon. <br>If you have any enquiries you can contact: moment3202@gmail.com <br>Contact Number: 0412228055<br>Location: 855 Stanley Street, Woolloongabba, QLD 4102" ;
+	$html = 'Dear '.$username."<br>Thank you for purchasing '".$servicename."' <br> Amount: ". $price."<br> Our staff will contact you soon. <br>If you have any enquiries you can contact: moment3202@gmail.com <br>Contact Number: 0412228055<br>Location: 855 Stanley Street, Woolloongabba, QLD 4102 <br> Wish you have a nice day!" ;
 
 	// output the HTML content
 	$pdf->writeHTML($html, true, 0, true, 0);
