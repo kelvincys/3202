@@ -6,7 +6,7 @@
 	$serviceid = $_SESSION["serviceid"];
 	include("dbtools.inc.php");
   	$link = create_connection();
-  	$sql = "SELECT service_name FROM service WHERE service_id = $serviceid";
+  	$sql = "SELECT service_name,price FROM service WHERE service_id = $serviceid";
   	$result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
 	while($row = mysqli_fetch_assoc($result)){
 	   $servicename = $row["service_name"];
@@ -77,9 +77,8 @@
 
 	// add a page
 	$pdf->AddPage();
-	$pdf->Image('assert/icon.jpg',0,0);
 	// create some HTML content
-	$html = 'Dear '.$username."<br>Thank you for purchasing '".$servicename."' <br> Amount: ". $price."<br> Our staff will contact you soon. <br>If you have any enquiries you can contact: moment3202@gmail.com <br>Contact Number: 0412228055<br>Location: 855 Stanley Street, Woolloongabba, QLD 4102 <br> Wish you have a nice day!" ;
+	$html = 'Dear '.$username."<br>Thank you for purchasing '".$servicename."' <br>Amount: $". $price."<br>Our staff will contact you soon. <br>If you have any enquiries you can contact: moment3202@gmail.com <br>Contact Number: 0412228055<br>Location: 855 Stanley Street, Woolloongabba, QLD 4102 <br>Wish you have a nice day!" ;
 
 	// output the HTML content
 	$pdf->writeHTML($html, true, 0, true, 0);

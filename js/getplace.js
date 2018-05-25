@@ -8,6 +8,6 @@ function getSelectedPlace() {
     		document.getElementById("frame").width = (myObj.items)[0].snippet.thumbnails.high.width;
     	}
     };
-    xmlhttp.open("GET", "youtubedata.php?event=" + document.getElementById("event").value, true);
+    xmlhttp.open("GET", "youtubegetplace.php?event=" + document.getElementById("event").value, true);
     xmlhttp.send();
 }

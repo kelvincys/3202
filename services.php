@@ -196,7 +196,20 @@
             }
         }
     ?>
-
+    <h2>We hold event in the following venue. You can enter event venue here to see the location</h2>
+    <b>The Cinema Proposal:</b><br>
+    Sunnybank Plaza Shopping Centre, Cnr Main Rd and McCullough St, Sunnybank QLD 4109<br>
+    <b>The River Proposal:</b><br>
+    Eagle Street Pier, 1 Eagle St, Brisbane City QLD 4000<br>
+    <b>Rooftop Party:</b><br>
+    71/73 Melbourne St, South Brisbane QLD 4101<br>
+    <b>Cate Cafe Party:</b><br>
+    667 Ipswich Rd, Annerley QLD 4103<br>
+    <b>Skytower Wedding Party:</b><br>
+    222 Margaret St, Brisbane City QLD 4000<br>
+    <b>Beach Wedding Party:</b><br>
+    Mermaid beach<br>
+    
     <form action="" method="post">
         <input type='text' name='address' placeholder='Enter event venue here to see the map' />
         <input type='submit' value='Go!'>

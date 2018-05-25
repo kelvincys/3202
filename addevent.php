@@ -128,7 +128,7 @@ $("#create-event").on('click', function(e) {
         dataType: 'json',
         success: function(response) {
         	$("#create-event").removeAttr('disabled');
-        	alert('Event created with ID : ' + response.event_id);
+        	alert('Your event has been added successfully!');
         },
         error: function(response) {
             $("#create-event").removeAttr('disabled');
