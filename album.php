@@ -184,22 +184,6 @@
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter birthday">
                 <img src="/assert/birthday4.jpg" class="img-responsive resize" id="aimg12" onclick="photoclick(this)">
             </div>
-
-            
-
-
-      <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen></iframe>
-            <div>
-              <select name="event" id="event">
-                <option value="proposal">Proposal</option>
-                <option value="wedding">Wedding Party</option>
-                <option value="birthday party">Birthday Party</option>
-              </select>
-              <button type="action" value="search" onclick="getSelectedPlace()">Change</button>
-            </div>
-
-            </div>
           </div>
         </div>
     </div>

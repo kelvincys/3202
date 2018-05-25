@@ -34,7 +34,7 @@ section {
 
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea,input[type=tel],input[type=email] {
+input[type=text], textarea,input[type=tel],input[type=email] {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */  
     border: 1px solid #ff849c; /* Pink border */
@@ -187,4 +187,21 @@ label {
   font-family: 'Fredoka One', cursive;
   font-family: 'Love Ya Like A Sister', cursive;
   font-family: 'Fredericka the Great', cursive;
+}
+
+
+#change, select{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #ff849c;
+    padding: 6px 10px;
+    border: solid #ff849c;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0px 25px;
+
+}
+
+.youtube{
+  margin: 0 auto;
 }
