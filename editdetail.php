@@ -3,57 +3,26 @@
   require_once("dbtools.inc.php");
   
   //get the information of the form
-  $username = $_POST["username"];
+  $username = $_SESSION["username"];
   $fname = $_POST["fname"]; 
   $lname = $_POST["lname"]; 
   $contact = $_POST["contact"]; 
-  $email = $_POST["email"];   
+  $email = $_POST["yemail"];   
   $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
   $id = $_SESSION['userid'];
-  echo $_SESSION['userid'];
   //Connect to the database
   $link = create_connection();
   
-  if($username == $_SESSION['username']){
-    $sql = "UPDATE user SET username = $username , password_hash = $password WHERE user_id = $id"or die(mysqli_error($link)) ;
-    if ($link ->query($sql) === TRUE){
 
-    $sql = "UPDATE user_detail SET email = $email, firstname =$fname, lastname=$lastname, contact=$contact WHERE user_id = $id"or die(mysqli_error($link));
-    $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-    }else {
-      echo mysqli_error($link);
-    }
-  } else{
-  $sql = "SELECT * FROM user Where  username= '$username'";
-  $result = execute_sql($link, "moment", $sql);
-  
-  //if username has been used
-    if (mysqli_num_rows($result) != 0)
-    {
-      //release $result memory
-      mysqli_free_result($result);
-      
-      //Show message to change the username
-      echo "<script type='text/javascript'>";
-      echo "alert('The username has been used, please change another username');";
-      echo "</script>";
-    }else{
-      //release $result memory
-      mysqli_free_result($result);
-      
+
       //run SQL command，add account
-       $sql = "UPDATE user SET username = $username , password_hash = $password WHERE user_id = $id"or die(mysqli_error($link));
-      if ($link ->query($sql) === TRUE){
-
-      $sql = "UPDATE user_detail SET email = $email, firstname =$fname, lastname=$lastname, contact=$contact WHERE user_id = $id"or die(mysqli_error($link));
+       $sql = "UPDATE user SET password_hash = '$password' WHERE user_id = $id" or die(mysqli_error($link));
+       $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
+      $sql = "UPDATE user_detail SET email = '$email', firstname ='$fname', lastname='$lname', contact='$contact' WHERE user_id = '$id' " or die(mysqli_error($link));
       $result = execute_sql($link, "moment", $sql) or die(mysqli_error($link));
-      }else {
-        echo mysqli_error($link);
-      }
 
-    }
 
-  }
+
   //check the username 
   
   //if the username is available
@@ -73,7 +42,7 @@
     <p align="center">Your Detail had been changed<br>
       Your username：<font color="#FF0000"><?php echo $username ?></font><br>
       Your password：<font color="#FF0000"><?php echo $_POST["password"] ?></font><br>       
-      You will be redirect to the home page in 5 second, if it doesn't please press <a href="profile.php">here</a>
+      You will be redirect to the profile page in 5 second, if it doesn't please press <a href="profile.php">here</a>
     </p>
   </body>
 </html>

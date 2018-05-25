@@ -6,8 +6,6 @@ if(!isset($_SESSION['login'])){
  // include("dbtools.inc.php");
   //$link = create_connection();
 }
-  $_SESSION['userid'] ="5";
-  echo $_SESSION['userid'];
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +31,7 @@ if(!isset($_SESSION['login'])){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/basic.js"></script>
     <script src="js/register.js"></script>
-    <script src="js/valid.js"></script>
+    <script src="js/check.js"></script>
 
   </head>
 
@@ -135,25 +133,18 @@ if(!isset($_SESSION['login'])){
                     </div>
                     
                   </div>
-                  <div class="mb-3">
-                    <label for="username">Username</label>
-                    <div class="input-group">
-                      <input name="username" type="text" class="form-control" id="username" placeholder="Username">
-                      <span id="user_status"></span>
-                    </div>
-                  </div>
 
                   <div class="mb-3">
                     <label for="email">Email <span class="text-muted"></span></label>
-                    <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com" >
-                    <span id="validate"></span>
+                    <input name="yemail" type="email" class="form-control" id="email_input" placeholder="you@example.com" >
+                    <span id="estatus"></span>
                   </div>
 
                   <div class="mb-3">
                     <label for="contact">Phone Number <span class="text-muted"></span></label>
                     <input name="contact" type="contact" class="form-control" id="contact" placeholder="Your Phone number">
                   </div>
-                  <input type="button" value="Update" onClick="check_info()">
+                  <input type="button" value="Update" onClick="check_editinfo()">
                   <input type="reset" value="Reset">
                 </form>
               </div>
