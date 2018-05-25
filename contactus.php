@@ -116,7 +116,7 @@
               <input type="text" id="name" name="yname" placeholder="Your name..." required>
 
               <label for="number">Contact number</label>
-              <input type="tel" id="number" name="cnumber" placeholder="Your phone number" required pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">
+              <input type="tel" id="number" name="cnumber" placeholder="xx-xxxx-xxxx" required pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}">
 
               <label for="email">Your email</label>
               <input type="email" id="email" name="yemail" placeholder="Your email..." required>

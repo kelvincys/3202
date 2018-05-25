@@ -200,13 +200,13 @@ if(!isset($_SESSION['logined'])){
                     Search Term: <input type="search" id="q" name="q" placeholder="Enter Search Term">
                   </div>
                   <div>
-                    Max Results: <input type="number" id="maxResults" name="maxResults" min="1" max="20" step="1" value="10">
+                    Max Results(Max:15): <input type="number" id="maxResults" name="maxResults" min="1" max="20" step="1" value="10">
                   </div>
-                  <input type="submit" value="Search">
+                  <input type="submit" value="Search" class="video">
                 </form>
-                <h3>Videos</h3>
+                <p>Videos:</p>
                 <ul><?php echo $videos; ?></ul>
-                <h3>Channels</h3>
+                <p>Channels:</p>
                 <ul><?php echo $channels; ?></ul>
             </div>
         </div>
