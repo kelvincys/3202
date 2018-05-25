@@ -21,6 +21,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/basic.js"></script>
+    <script src="js/youtube.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   
@@ -167,7 +168,24 @@
           <section id="album" class="container-fluid">
             <h1 class="mt-5">Amazing Moments Of Our Customers</h1>
               <p>We created many amazing experience to our customers in the past. Take a look on some of the wonderful moments.</p>
-              <center><a  href="album.php"><button>Our past events</button></a></center>  
+            <div class="row">
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4">
+              <iframe id ="frame" width="560" height="315" src="https://www.youtube.com/embed/fb5Phs2ojJo" frameborder="0" allowfullscreen align="center"></iframe>
+              <div>
+                <select name="event" id="event">
+                  <option value="proposal">Proposal</option>
+                  <option value="wedding">Wedding Party</option>
+                  <option value="birthday party">Birthday Party</option>
+                </select>
+                <button type="action" value="search" onclick="getSelectedPlace()" id="change">Change</button>
+              </div>
+            </div>
+            <div class="col-lg-4">
+            </div>
+            </div>
+              <center><a  href="album.php"><button>Know more about our past events</button></a></center>  
           </section>
 
 
